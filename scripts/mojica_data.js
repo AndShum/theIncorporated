@@ -224,7 +224,7 @@ var mojicaLocalData = [
     featured_items: '',
   },
   {
-    main_img_src: 'img/mojica_img/mojica_credits.jpg',
+    main_img_src: 'img/mojica_img/mojica_credits.png',
     lrg_img_src: '',
     img_alt: '',
     description: '',

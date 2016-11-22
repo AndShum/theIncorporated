@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>The Incorporated</title>
+    <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <scripts id="mojica_template" type="x-handlebars-template">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/module.css">
+    <script id="mojica_template" type="text/x-handlebars-template">
       <div class="container">
         <li>
           <img src="{{main_img_src}}" alt="img_alt" class="main_img_display">
-          <p>{{description}}</p>
+          <p class=mojica_description>{{description}}</p>
         </li>
       </div>
     </script>
@@ -43,8 +46,8 @@
 
     <!-- Vendor Scripts -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="vendor/handlebars-v4.0.5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="vendor/scripts/handlebars-v4.0.5.js"></script>
 
     <!-- Data Scripts -->
     <script src="scripts/mojica_data.js"></script>
