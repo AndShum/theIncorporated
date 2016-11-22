@@ -69,8 +69,22 @@ a {
   color: lightgrey;
 }
 
+.sub_nav_ul {
+  padding: 20px 0 0 0;
+  position: absolute;
+}
+
 .sub_nav_li {
   display: none;
+  padding: 10px 0;
+  transition: color 500ms;
+  color: black;
+  text-align: left;
+}
+
+.sub_nav_li:hover {
+  transition: 250ms;
+  color: lightgrey;
 }
 
 .mojica_description {

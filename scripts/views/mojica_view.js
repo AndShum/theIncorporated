@@ -24,10 +24,12 @@ mojicaImages.forEach(function(inst) {
 
 function handleCollections() {
   $('.collections').on('click', function() {
-    $('.sub_nav_li').addClass('showing').slideToggle().css({'display':'block', 'height':'120px'});
+    $('.collections').css({'border-bottom':'none'});
+    $('.sub_nav_li').addClass('showing').slideToggle('slow');
     console.log(this);
     if($(this).siblings().class() === 'showing') {
       $('.collections').on('click', function() {
+        $('.collections').css({'border-bottom':'1px solid black'});
         $('.sub_nav_li').removeClass('showing');
       });
     }
