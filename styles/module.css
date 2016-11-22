@@ -1,6 +1,79 @@
-.sub_nav {
+/**************************
+START HEADER STYLE
+**************************/
+.icon_banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cart_icon {
+  width: 40px;
+}
+
+.social_icons_ul {
+  margin: 0;
+  padding: 0;
+}
+
+.social_icons_li {
+  display: inline;
+}
+
+.social_icons {
+  width: 40px;
+}
+
+.inc_logo {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
+/**************************
+END HEADER STYLE
+**************************/
+
+/**************************
+START NAV STYLE
+**************************/
+
+.collections {
+  text-decoration: underline;
+}
+
+.main_nav_ul {
+  padding: 0 20px;
+  max-width: 400px;
+  margin: 25px auto;
+  display:flex;
+  justify-content: space-between;
+}
+
+.main_nav_li {
+  display: inline;
+  transition: color 500ms;
+  color: black;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.main_nav_li:hover {
+  transition: 250ms;
+  color: lightgrey;
+}
+
+.sub_nav_li {
   display: none;
 }
+
+
+
+
+/**************************
+END NAV STYLE
+**************************/
 
 .mojica_description {
   display: none;
