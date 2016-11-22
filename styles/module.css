@@ -1,6 +1,13 @@
 /**************************
 START HEADER STYLE
 **************************/
+
+header {
+  position: relative;;
+  right: 0;
+  display: block;
+}
+
 .icon_banner {
   display: flex;
   justify-content: space-between;
@@ -95,6 +102,13 @@ a {
 START GALLERY STYLE
 **************************/
 
+#gallery {
+  display: flex;
+  justify-content:flex-start;
+  position: static;
+  overflow-x: scroll;
+
+}
 
 
 /**************************
