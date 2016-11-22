@@ -21,3 +21,18 @@ mojicaLocalData.forEach(function(element) {
 mojicaImages.forEach(function(inst) {
   $('#gallery').append(inst.toHtml());
 });
+
+function handleCollections() {
+  $('.collections').on('click', function() {
+    $('.sub_nav_li').addClass('showing').slideToggle().css({'display':'block', 'height':'120px'});
+    console.log(this);
+    if($(this).siblings().class() === 'showing') {
+      $('.collections').on('click', function() {
+        $('.sub_nav_li').removeClass('showing');
+      });
+    }
+  });
+
+}
+
+handleCollections();

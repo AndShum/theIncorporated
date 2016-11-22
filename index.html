@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script id="mojica_template" type="text/x-handlebars-template">
       <div class="container">
-        <li>
+        <li class="main_img_li">
           <img src="{{main_img_src}}" alt="img_alt" class="main_img_display">
           <!-- description has been set to display: none for mobile view -->
           <p class=mojica_description>{{description}}</p>
@@ -43,18 +43,29 @@
 
     <nav>
       <ul class="main_nav_ul">
-        <li class="main_nav_li collections">Collections</li>
+        <li class="main_nav_li collections">
+          <a href="#">Collections</a>
+          <ul>
+            <li class="sub_nav_li">Mojica Lookbook</li>
+            <li class="sub_nav_li">Andrade Editorial</li>
+            <li class="sub_nav_li">Bell Videos</li>
+          </ul>
+        </li>
           <!-- sub nav set to display:none for dropdown menu -->
-          <li class="sub_nav_li">Mojica Lookbook</li>
-          <li class="sub_nav_li">Andrade Editorial</li>
-          <li class="sub_nav_li">Bell Videos</li>
-        <li class="main_nav_li">Shop</li>
-        <li class="main_nav_li">Locations</li>
-        <li class="main_nav_li">Contact</li>
+
+        <li class="main_nav_li"><a href="#">Shop</a></li>
+        <li class="main_nav_li"><a href="#">Locations</a></li>
+        <li class="main_nav_li"><a href="#">Contact</a></li>
       </ul>
     </nav>
 
-    <div id="gallery">
+    <div id="gallery_wrapper">
+
+      <section id="gallery">
+        <!-- Images will populate here -->
+      </section>
+
+      <p class="view_more">View More</p>
 
     </div>
 
