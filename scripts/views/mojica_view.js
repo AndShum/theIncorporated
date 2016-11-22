@@ -37,4 +37,14 @@ function handleCollections() {
 
 }
 
+function horizontalScroll(){
+  $(function(){
+    var $anchor = $(this);
+    $('#gallery').stop().animate({
+      scrollLeft:$($anchor.attr('href')).offset()},1000);
+    event.preventDefault();
+  });
+}
+
 handleCollections();
+horizontalScroll();
