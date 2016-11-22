@@ -223,11 +223,4 @@ var mojicaLocalData = [
     description: 'this is a placeholder description',
     featured_items: '',
   },
-  {
-    main_img_src: 'img/mojica_img/mojica_credits.png',
-    lrg_img_src: '',
-    img_alt: '',
-    description: '',
-    featured_items: '',
-  }
 ];
