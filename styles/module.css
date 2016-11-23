@@ -103,14 +103,9 @@ a {
 START GALLERY STYLE
 **************************/
 
-#gallery {
-  display: flex;
-  justify-content:flex-start;
-  position: static;
-  overflow-x: scroll;
-
+.featured_items {
+  position: absolute;
 }
-
 
 /**************************
 END GALLERY STYLE

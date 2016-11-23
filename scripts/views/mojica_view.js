@@ -18,7 +18,7 @@ mojicaLocalData.forEach(function(element) {
   mojicaImages.push(new MojicaGallery(element));
 });
 
-mojicaImages.forEach(function(inst) {
+mojicaImages.slice(0,9).forEach(function(inst) {
   $('#gallery').append(inst.toHtml());
 });
 
@@ -37,14 +37,14 @@ function handleCollections() {
 
 }
 
-function horizontalScroll(){
-  $(function(){
-    var $anchor = $(this);
-    $('#gallery').stop().animate({
-      scrollLeft:$($anchor.attr('href')).offset()},1000);
-    event.preventDefault();
+function handleViewMore() {
+  $('.view_more').on('click', function() {
+    mojicaImages.splice(9,9).forEach(function(inst) {
+      $('#gallery').append(inst.toHtml());
+    });
   });
 }
 
+
 handleCollections();
-horizontalScroll();
+handleViewMore();
