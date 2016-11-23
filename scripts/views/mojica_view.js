@@ -26,15 +26,7 @@ function handleCollections() {
   $('.collections').on('click', function() {
     $('.collections').css({'border-bottom':'none'});
     $('.sub_nav_li').addClass('showing').slideToggle('slow');
-    console.log(this);
-    if($(this).siblings().class() === 'showing') {
-      $('.collections').on('click', function() {
-        $('.collections').css({'border-bottom':'1px solid black'});
-        $('.sub_nav_li').removeClass('showing');
-      });
-    }
   });
-
 }
 
 function handleViewMore() {

@@ -32,6 +32,12 @@ header {
   width: 40px;
 }
 
+.logo_link {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
 .inc_logo {
   width: 200px;
   margin: 0 auto;
@@ -102,9 +108,30 @@ a {
 /**************************
 START GALLERY STYLE
 **************************/
+.main_img_display {
+  width: 100%;
+  max-width: 321px;
+  display: block;
+  margin: 0 auto;
+}
+
+.main_img_li {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
 
 .featured_items {
   position: absolute;
+  z-index: 10;
+  display: block;
+  background: rgba(0,0,0,0.7);
+  padding: 10px 5px;
+  margin: 0;
+  width: 100%;
+  color: white;
+
 }
 
 /**************************
