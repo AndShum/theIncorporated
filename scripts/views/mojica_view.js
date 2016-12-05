@@ -18,25 +18,18 @@ mojicaLocalData.forEach(function(element) {
   mojicaImages.push(new MojicaGallery(element));
 });
 
-mojicaImages.slice(0,9).forEach(function(inst) {
+mojicaImages.forEach(function(inst) {
   $('#gallery').append(inst.toHtml());
 });
 
 function handleCollections() {
   $('.collections').on('click', function() {
     $('.collections').css({'border-bottom':'none'});
-    $('.sub_nav_li').addClass('showing').slideToggle('slow');
+    $('.collections_ul').addClass('showing').slideToggle('slow');
   });
 }
 
-function handleViewMore() {
-  $('.view_more').on('click', function() {
-    mojicaImages.splice(9,9).forEach(function(inst) {
-      $('#gallery').append(inst.toHtml());
-    });
-  });
-}
+
 
 
 handleCollections();
-handleViewMore();
