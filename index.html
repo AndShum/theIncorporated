@@ -12,7 +12,7 @@
     <script id="mojica_template" type="text/x-handlebars-template">
       <div class="container">
         <li class="main_img_li">
-          <p class="featured_items">{{main_img_src}}</p>
+          <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
           <img src="{{main_img_src}}" alt="img_alt" class="main_img_display">
           <!-- description has been set to display: none for mobile view -->
@@ -41,7 +41,7 @@
 
     </section>
 
-      <a href="index.html" class="logo_link"><img src="img/inc_logo.png" alt="The Incorporated Logo" class="inc_logo"></a>
+      <a href="/" class="logo_link"><img src="img/inc_logo.png" alt="The Incorporated Logo" class="inc_logo"></a>
 
 
     <nav>
@@ -56,22 +56,50 @@
         </li>
           <!-- sub nav set to display:none for dropdown menu -->
 
-        <li class="main_nav_li"><a href="#">Shop</a></li>
-        <li class="main_nav_li"><a href="#">Locations</a></li>
-        <li class="main_nav_li"><a href="#">Contact</a></li>
+        <li class="main_nav_li"><a href="/shop">Shop</a></li>
+        <li class="main_nav_li"><a href="/locations">Locations</a></li>
+        <li class="main_nav_li"><a href="/contact">Contact</a></li>
       </ul>
     </nav>
 
   </header>
 
+ <!-- BEGIN COLLECTIONS GALLERY -->
+  <div id="gallery_wrapper">
 
-    <div id="gallery_wrapper">
+    <section id="gallery" data-display=9 data-group=1>
+      <!-- Images will populate here -->
+    </section>
+    <p class="view_more">View More</p>
+  </div>
 
-      <section id="gallery" data-display=9 data-group=1>
-        <!-- Images will populate here -->
-      </section>
-      <p class="view_more">View More</p>
-    </div>
+  <!-- END COLLECTIONS GALLERY -->
+
+
+  <!-- BEGIN SHOP -->
+  <div id="shop">
+    <h1>Body Ritual of the Nacirema</h1>
+  </div>
+
+  <!-- END SHOP -->
+
+
+  <!-- BEGIN RETAILERS -->
+  <div id="retailers">
+    <h1>retailers</h1>
+  </div>
+  <!-- END LOCATIONS -->
+
+
+  <!-- BEGIN CONTACT -->
+  <div id="contact">
+    <h1>Contact</h1>
+  </div>
+  <!-- END CONTACT -->
+
+
+
+
 
     <footer>
       <p>THE INCORPORATED</p>
@@ -79,16 +107,24 @@
       <p>IF YOU DON'T STAND FOR ANYTHING, DON'T STAND IN OUR CLOTHING<p>
     </footer>
 
-    <!-- Vendor Scripts -->
+    <!-- VENDOR SCRIPTS -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="vendor/scripts/page.js"></script>
     <script src="vendor/scripts/handlebars-v4.0.5.js"></script>
 
-    <!-- Data Scripts -->
+    <!-- DATA SCRIPTS -->
     <script src="scripts/mojica_data.js"></script>
 
-    <!-- View Scripts -->
+    <!-- VIEW SCRIPTS -->
     <script src="scripts/views/mojica_view.js"></script>
+
+    <!-- CONTROLLER SCRIPTS -->
+    <!-- <script src="scripts/controller/shopController.js"></script>
+    <script src="scripts/controller/collectionsController.js"></script>
+    <script src="scripts/controller/locationsController.js"></script>
+    <!-- <script src="scripts/controller/contactController.js"></script> -->
+    <!-- <script src="scripts/controller/routes.js"></script> --> -->
 
   </body>
 </html>

@@ -1,8 +1,9 @@
 var mojicaLocalData = [
   {
+    name: '',
     main_img_src: 'img/mojica_img/1.jpg',
     lrg_img_src: '',
-    img_alt: '',
+    img_alt: '', 
     description: 'this is a placeholder description',
     featured_items: '',
   },
