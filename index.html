@@ -21,6 +21,20 @@
         </li>
       </div>
     </script>
+
+    <script id="andrade_template" type="text/x-handlebars-template">
+      <div class="container">
+        <li class="main_img_li">
+          <!-- <p class="featured_items">{{main_img_src}}</p> -->
+
+          <img src="{{main_img_src}}" alt="img_alt" class="main_img_display">
+          <!-- description has been set to display: none for mobile view -->
+
+          <!-- <p class=mojica_description>{{description}}</p> -->
+        </li>
+      </div>
+    </script>
+  </head>
   </head>
   <body>
     <header>
@@ -29,7 +43,7 @@
           <li class="social_icons_li"><a href="https://www.instagram.com/theinc0rp0rated/" target="_blank"><img src="img/social_icons/instagram_logo.png" alt="Instagram" class="social_icons"></a></li>
           <li class="social_icons_li"><a href="https://twitter.com/theinc0rp0rated" target="_blank"><img src="img/social_icons/twitter_logo.png" alt="Twitter" class="social_icons"></a></li>
           <li class="social_icons_li"><a href="http://theinc0rp0rated.tumblr.com/" target="_blank"><img src="img/social_icons/tumbler_logo.png" alt="Tumbler" class="social_icons"></a></li>
-          <li class="social_icons_li"><a href="https://www.youtube.com/user/theincclothing" target="_blank"><img src="img/social_icons/youtube_logo.png" alt="Youtube" class="social_icons"></a></li>
+          <li class="social_icons_li"><a href="https://www.youtube.com/user/theincclothing" target="_blank"><img src="img/social_icons/youtube_logo_orig.png" alt="Youtube" class="social_icons"></a></li>
           <li class="social_icons_li"><a href="https://www.facebook.com/theincorporated" target="_blank"><img src="img/social_icons/facebook_logo.png" alt="Facebook" class="social_icons"></a></li>
         </ul>
 
@@ -51,12 +65,12 @@
           <ul class="collections_ul">
 
             <ul class="collection1_ul ">- Collection 1
-              <li class="collection1_ul collection1_li">- Mojica Lookbook</li>
-              <li class="collection1_ul collection1_li">- Andrade Editorial</li>
+              <li class="collection1_ul collection1_li"><a href="/mojica_lookbook" class="mojica_link">- Mojica Lookbook</a></li>
+              <li class="collection1_ul collection1_li"><a href="/andrade_editorial" class="andrade_link">- Andrade Editorial</a></li>
             </ul>
 
             <ul class="collection2_ul">- Collection 2
-              <li class="collection2_ul collection2_li">- Lookbook</li>
+              <li class="collection2_ul collection2_li"><a href="/godoy_lookbook">- Godoy Lookbook</a></li>
             </ul>
 
           </ul>
@@ -76,8 +90,8 @@
 
     <section id="gallery" data-display=9 data-group=1>
       <!-- Images will populate here -->
+
     </section>
-    <p class="view_more">View More</p>
   </div>
 
   <!-- END COLLECTIONS GALLERY -->
@@ -121,16 +135,20 @@
     <script src="vendor/scripts/handlebars-v4.0.5.js"></script>
 
     <!-- DATA SCRIPTS -->
-    <script src="scripts/mojica_data.js"></script>
+    <script src="scripts/data/mojica_data.js"></script>
+    <script src="scripts/data/andrade_data.js"></script>
+
 
     <!-- VIEW SCRIPTS -->
     <script src="scripts/views/mojica_view.js"></script>
+    <script src="scripts/views/andrade_view.js"></script>
 
     <!-- CONTROLLER SCRIPTS -->
     <script src="scripts/controller/shopController.js"></script>
     <script src="scripts/controller/collectionsController.js"></script>
     <script src="scripts/controller/retailersController.js"></script>
     <script src="scripts/controller/contactController.js"></script>
+    <script src="scripts/controller/andradeController.js"></script>
     <script src="scripts/controller/routes.js"></script>
 
   </body>

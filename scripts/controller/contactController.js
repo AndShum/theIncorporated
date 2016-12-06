@@ -2,7 +2,7 @@
   var contactController = {};
 
   contactController.reveal = function() {
-    $('#gallery_wrapper').fadeOut();
+    $('#mojica_template').fadeOut();
     $('#shop').fadeOut();
     $('#retailers').fadeOut();
     $('#contact').fadeIn();
