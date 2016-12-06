@@ -19,32 +19,17 @@ mojicaLocalData.forEach(function(element) {
 });
 
 mojicaImages.forEach(function(inst) {
-  $('#gallery').append(inst.toHtml());
+  $('#mojica_gallery').append(inst.toHtml());
 });
 
 function handleCollections() {
   $('.collections').on('click', function() {
     $('.collections').css({'border-bottom':'none'});
-    $('.sub_nav_li').addClass('showing').slideToggle('slow');
-    console.log(this);
-    if($(this).siblings().class() === 'showing') {
-      $('.collections').on('click', function() {
-        $('.collections').css({'border-bottom':'1px solid black'});
-        $('.sub_nav_li').removeClass('showing');
-      });
-    }
-  });
-
-}
-
-function horizontalScroll(){
-  $(function(){
-    var $anchor = $(this);
-    $('#gallery').stop().animate({
-      scrollLeft:$($anchor.attr('href')).offset()},1000);
-    event.preventDefault();
+    $('.collections_ul').addClass('showing').slideToggle('slow');
   });
 }
+
+
+
 
 handleCollections();
-horizontalScroll();
