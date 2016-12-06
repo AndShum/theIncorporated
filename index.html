@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/module.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script id="mojica_template" type="text/x-handlebars-template">
-      <div class="container">
+      <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
@@ -23,7 +23,7 @@
     </script>
 
     <script id="andrade_template" type="text/x-handlebars-template">
-      <div class="container">
+      <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
@@ -36,7 +36,7 @@
     </script>
 
     <script id="godoy_template" type="text/x-handlebars-template">
-      <div class="container">
+      <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
@@ -74,16 +74,16 @@
     <nav>
       <ul class="main_nav_ul">
         <li class="main_nav_li collections">
-          <a href="#">Collections</a>
+          <a href="#" name="top">Collections</a>
           <ul class="collections_ul">
 
             <ul class="collection1_ul ">- Collection 1
               <li class="collection1_ul collection1_li"><a href="/" class="mojica_link">- Mojica Lookbook</a></li>
-              <li class="collection1_ul collection1_li"><a href="/andrade_editorial" class="andrade_link">- Andrade Editorial</a></li>
+              <li class="collection1_ul collection1_li"><a href="/andrade_editorial" id="andrade_link">- Andrade Editorial</a></li>
             </ul>
 
             <ul class="collection2_ul">- Collection 2
-              <li class="collection2_ul collection2_li"><a href="/godoy_lookbook" class="godoy_link">- Godoy Lookbook</a></li>
+              <li class="collection2_ul collection2_li"><a href="/godoy_lookbook" id="godoy_link">- Godoy Lookbook</a></li>
             </ul>
 
           </ul>
