@@ -2,8 +2,12 @@
   var godoyController = {};
 
   godoyController.reveal = function() {
-    $('#mojica_gallery').hide();
-    $('#andrade_gallery').hide();
+    $('#mojica_gallery', function() {
+      console.log(this);
+    }).hide();
+    $('#andrade_gallery', function() {
+      console.log(this);
+    }).hide();
     $('#shop').hide();
     $('#contact').hide();
     $('#retailers').hide();

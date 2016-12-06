@@ -2,8 +2,12 @@
   var andradeController = {};
 
   andradeController.reveal = function() {
-    $('#mojica_gallery').hide();
-    $('#godoy_gallery').hide();
+    $('#mojica_gallery', function() {
+      console.log(this);
+    }).hide();
+    $('#godoy_gallery', function() {
+      console.log(this);
+    }).hide();
     $('#shop').hide();
     $('#contact').hide();
     $('#retailers').hide();
