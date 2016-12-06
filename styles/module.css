@@ -6,6 +6,7 @@ header {
   position: relative;;
   right: 0;
   display: block;
+  box-shadow: -5px 2px 15px 5px rgba(45,45,45,0.5);
 }
 
 .icon_banner {
@@ -31,6 +32,12 @@ header {
   width: 40px;
 }
 
+.logo_link {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+}
+
 .inc_logo {
   width: 200px;
   margin: 0 auto;
@@ -50,9 +57,9 @@ START NAV STYLE
 }
 
 .main_nav_ul {
-  padding: 0 20px;
+  padding: 5px 20px;
   max-width: 400px;
-  margin: 25px auto;
+  margin: 0 auto;
   display:flex;
   justify-content: space-between;
 }
@@ -76,20 +83,49 @@ a {
   color: lightgrey;
 }
 
-.sub_nav_ul {
-  padding: 20px 0 0 0;
+.collections_ul {
+  display: none;
   position: absolute;
+  padding: 20px;
+  margin-top: 15px;
+  background: rgba(24,24,24,0.65);
 }
 
-.sub_nav_li {
-  display: none;
-  padding: 10px 0;
+.collection1_ul {
+  /*padding: 20px 0 0 0;
+  position: absolute;*/
+  text-align: justify;
+  padding: 20px 0 0 0;
+}
+
+
+
+.collection1_li {
+  padding: 10px 0 0 10px;
   transition: color 500ms;
   color: black;
-  text-align: left;
 }
 
-.sub_nav_li:hover {
+.collection1_li:hover {
+  transition: 250ms;
+  color: lightgrey;
+}
+
+.collection2_ul {
+  /*padding: 20px 0 0 0;
+  position: absolute;*/
+  text-align: justify;
+  padding: 20px 0 0 0;
+}
+
+
+.collection2_li {
+  padding: 10px 0 0 10px;
+  transition: color 500ms;
+  color: black;
+}
+
+.collection2_li:hover {
   transition: 250ms;
   color: lightgrey;
 }
@@ -101,12 +137,52 @@ a {
 /**************************
 START GALLERY STYLE
 **************************/
+.main_img_display {
+  width: 100%;
+  max-width: 321px;
+  display: block;
+  margin: 0 auto;
+}
 
-#gallery {
+.main_img_li {
+  display: block;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+
+@media only screen and (min-width: 736px) {
+
+
+#gallery_wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 1284px;
+
+}
+
+.gallery {
   display: flex;
   justify-content:flex-start;
   position: static;
   overflow-x: scroll;
+
+  }
+  .main_img_display {
+    width: 321px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .main_img_li {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 4;
+  }
+
+  .view_more {
+    display: none;
+  }
 
 }
 
