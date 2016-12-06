@@ -30,10 +30,13 @@ function handleAndradePage() {
       $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
+  window.removeEventListener('click', handleAndradePage, false);
+
 }
 
 
-$('.andrade_link').on('click', function(e) {
-  handleAndradePage();
-});
+window.addEventListener('click', handleAndradePage, false);
+// $('.andrade_link').on('click', function(e) {
+//   handleAndradePage().done();
+// });
 // handleCollections();

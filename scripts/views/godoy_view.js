@@ -30,10 +30,11 @@ function handleGodoyPage() {
       $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
+  window.removeEventListener('click', handleGodoyPage, false);
+
 }
+window.addEventListener('click', handleGodoyPage, false);
 
 
-$('.godoy_link').on('click', function(e) {
-  handleGodoyPage();
-});
+
 // handleCollections();
