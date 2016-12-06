@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>The Incorporated</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -34,8 +34,21 @@
         </li>
       </div>
     </script>
+
+    <script id="godoy_template" type="text/x-handlebars-template">
+      <div class="container">
+        <li class="main_img_li">
+          <!-- <p class="featured_items">{{main_img_src}}</p> -->
+
+          <img src="{{main_img_src}}" alt="img_alt" class="main_img_display">
+          <!-- description has been set to display: none for mobile view -->
+
+          <!-- <p class=mojica_description>{{description}}</p> -->
+        </li>
+      </div>
+    </script>
   </head>
-  </head>
+
   <body>
     <header>
       <section class="icon_banner">
@@ -65,12 +78,12 @@
           <ul class="collections_ul">
 
             <ul class="collection1_ul ">- Collection 1
-              <li class="collection1_ul collection1_li"><a href="/mojica_lookbook" class="mojica_link">- Mojica Lookbook</a></li>
+              <li class="collection1_ul collection1_li"><a href="/" class="mojica_link">- Mojica Lookbook</a></li>
               <li class="collection1_ul collection1_li"><a href="/andrade_editorial" class="andrade_link">- Andrade Editorial</a></li>
             </ul>
 
             <ul class="collection2_ul">- Collection 2
-              <li class="collection2_ul collection2_li"><a href="/godoy_lookbook">- Godoy Lookbook</a></li>
+              <li class="collection2_ul collection2_li"><a href="/godoy_lookbook" class="godoy_link">- Godoy Lookbook</a></li>
             </ul>
 
           </ul>
@@ -88,10 +101,21 @@
  <!-- BEGIN COLLECTIONS GALLERY -->
   <div id="gallery_wrapper">
 
-    <section id="gallery" data-display=9 data-group=1>
+    <section id="mojica_gallery" class="gallery" data-display=9 data-group=1>
       <!-- Images will populate here -->
 
     </section>
+
+    <section id="andrade_gallery" class="gallery" data-display=9 data-group=1>
+      <!-- Images will populate here -->
+
+    </section>
+
+    <section id="godoy_gallery" class="gallery" data-display=9 data-group=1>
+      <!-- Images will populate here -->
+
+    </section>
+
   </div>
 
   <!-- END COLLECTIONS GALLERY -->
@@ -137,11 +161,13 @@
     <!-- DATA SCRIPTS -->
     <script src="scripts/data/mojica_data.js"></script>
     <script src="scripts/data/andrade_data.js"></script>
+    <script src="scripts/data/godoy_data.js"></script>
 
 
     <!-- VIEW SCRIPTS -->
     <script src="scripts/views/mojica_view.js"></script>
     <script src="scripts/views/andrade_view.js"></script>
+    <script src="scripts/views/godoy_view.js"></script>
 
     <!-- CONTROLLER SCRIPTS -->
     <script src="scripts/controller/shopController.js"></script>
@@ -149,6 +175,7 @@
     <script src="scripts/controller/retailersController.js"></script>
     <script src="scripts/controller/contactController.js"></script>
     <script src="scripts/controller/andradeController.js"></script>
+    <script src="scripts/controller/godoyController.js"></script>
     <script src="scripts/controller/routes.js"></script>
 
   </body>

@@ -2,9 +2,11 @@
   var shopController = {};
 
   shopController.reveal = function() {
-    $('#gallery_wrapper').fadeOut();
-    $('#retailers').fadeOut();
-    $('#contact').fadeOut();
+    $('#mojica_gallery').hide();
+    $('#andrade_gallery').hide();
+    $('#godoy_gallery').hide();
+    $('#retailers').hide();
+    $('#contact').hide();
     $('#shop').fadeIn();
   };
 

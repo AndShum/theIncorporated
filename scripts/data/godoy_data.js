@@ -1,4 +1,12 @@
-var mojicaLocalData = [
+var godoyLocalData = [
+  {
+    name: '',
+    main_img_src: 'img/godoy_img/0.jpg',
+    lrg_img_src: '',
+    img_alt: 'DONT STOP THE CARNIVAL by GODOY',
+    description: 'COLLECTION 2 LOOKBOOK',
+    featured_items: '',
+  },
   {
     name: '',
     main_img_src: 'img/godoy_img/1.jpg',
@@ -346,13 +354,6 @@ var mojicaLocalData = [
   },
   {
     main_img_src: 'img/godoy_img/50.jpg',
-    lrg_img_src: '',
-    img_alt: 'DONT STOP THE CARNIVAL by GODOY',
-    description: 'COLLECTION 2 LOOKBOOK',
-    featured_items: '',
-  },
-  {
-    main_img_src: 'img/godoy_img/51.jpg',
     lrg_img_src: '',
     img_alt: 'DONT STOP THE CARNIVAL by GODOY',
     description: 'COLLECTION 2 LOOKBOOK',

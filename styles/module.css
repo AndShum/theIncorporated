@@ -145,7 +145,7 @@ START GALLERY STYLE
 }
 
 .main_img_li {
-  display: flex;
+  display: block;
   align-items: flex-end;
   flex-grow: 1;
 }
@@ -161,7 +161,7 @@ START GALLERY STYLE
 
 }
 
-#gallery {
+.gallery {
   display: flex;
   justify-content:flex-start;
   position: static;
@@ -175,7 +175,7 @@ START GALLERY STYLE
   }
 
   .main_img_li {
-    display: block;
+    display: flex;
     align-items: flex-end;
     flex-grow: 4;
   }

@@ -2,10 +2,12 @@
   var collectionsController = {};
 
   collectionsController.reveal = function() {
-    $('#shop').fadeOut();
-    $('#retailers').fadeOut();
-    $('#contact').fadeOut();
-    $('#gallery_wrapper').fadeIn();
+    $('#shop').hide();
+    $('#retailers').hide();
+    $('#contact').hide();
+    $('#andrade_gallery').hide();
+    $('#godoy_gallery').hide();
+    $('#mojica_gallery').fadeIn();
   };
 
   module.collectionsController = collectionsController;

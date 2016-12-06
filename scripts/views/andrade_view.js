@@ -20,7 +20,7 @@ function handleAndradePage() {
   });
 
   andradeImages.forEach(function(inst) {
-    $('#gallery').append(inst.toHtml());
+    $('#andrade_gallery').append(inst.toHtml());
   });
 
 

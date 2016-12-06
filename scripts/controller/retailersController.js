@@ -2,9 +2,11 @@
   var retailersController = {};
 
   retailersController.reveal = function() {
-    $('#gallery_wrapper').fadeOut();
-    $('#shop').fadeOut();
-    $('#contact').fadeOut();
+    $('#mojica_gallery').hide();
+    $('#godoy_gallery').hide();
+    $('#andrade_gallery').hide();
+    $('#shop').hide();
+    $('#contact').hide();
     $('#retailers').fadeIn();
   };
 

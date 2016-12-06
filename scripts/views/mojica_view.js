@@ -19,7 +19,7 @@ mojicaLocalData.forEach(function(element) {
 });
 
 mojicaImages.forEach(function(inst) {
-  $('#gallery').append(inst.toHtml());
+  $('#mojica_gallery').append(inst.toHtml());
 });
 
 function handleCollections() {

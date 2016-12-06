@@ -2,9 +2,11 @@
   var contactController = {};
 
   contactController.reveal = function() {
-    $('#mojica_template').fadeOut();
-    $('#shop').fadeOut();
-    $('#retailers').fadeOut();
+    $('#mojica_gallery').hide();
+    $('#andrade_gallery').hide();
+    $('#godoy_gallery').hide();
+    $('#shop').hide();
+    $('#retailers').hide();
     $('#contact').fadeIn();
   };
 
