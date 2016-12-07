@@ -30,12 +30,12 @@ function handleAndradePage() {
       $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
-  window.removeEventListener('click', handleAndradePage, false);
+  document.getElementById('andrade_link').removeEventListener('click', handleAndradePage, false);
 
 }
 
 
-window.addEventListener('click', handleAndradePage, false);
+document.getElementById('andrade_link').addEventListener('click', handleAndradePage, false);
 // $('.andrade_link').on('click', function(e) {
 //   handleAndradePage().done();
 // });
