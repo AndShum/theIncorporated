@@ -41,6 +41,10 @@ function handleCollections() {
     $('.collections').css({'border-bottom':'none'});
     $('.collections_ul').addClass('showing').slideToggle('slow');
   });
+  document.getElementById('shop_link').removeEventListener('click', handleShopPage, false);
 }
+
+document.getElementById('shop_link').removeEventListener('click', handleShopPage, false);
+
 // handleCollections();
 handleShopPage();
