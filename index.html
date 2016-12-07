@@ -47,6 +47,15 @@
         </li>
       </div>
     </script>
+
+    <script id="shop_template" type="text/x-handlebars-template">
+      <div class="shop_gallery">
+          <li class="shop_li"><a href="#"></a>
+            <img src="{{front_img_src}}" alt="img_alt" class="shop_gallery_img">
+          </li>
+      </div>
+    </script>
+
   </head>
 
   <body>
@@ -123,7 +132,11 @@
 
   <!-- BEGIN SHOP -->
   <div id="shop">
-    <h1>Body Ritual of the Nacirema</h1>
+    <h1>COLLECTION 1:Body Ritual of the Nacirema</h1>
+    <h2>COLLECTION NOW AVAILABLE</h2>
+    <section id="shop_gallery">
+      <!-- SHOP IMAGES WILL POPULATE HERE -->
+    </section>
   </div>
 
   <!-- END SHOP -->
@@ -162,12 +175,15 @@
     <script src="scripts/data/mojica_data.js"></script>
     <script src="scripts/data/andrade_data.js"></script>
     <script src="scripts/data/godoy_data.js"></script>
+    <script src="scripts/data/shop_data.js"></script>
 
 
     <!-- VIEW SCRIPTS -->
     <script src="scripts/views/mojica_view.js"></script>
     <script src="scripts/views/andrade_view.js"></script>
     <script src="scripts/views/godoy_view.js"></script>
+    <script src="scripts/views/shop_view.js"></script>
+
 
     <!-- CONTROLLER SCRIPTS -->
     <script src="scripts/controller/shopController.js"></script>
