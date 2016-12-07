@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/module.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script id="mojica_template" type="text/x-handlebars-template">
-      <div class="container">
+      <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
@@ -23,7 +23,7 @@
     </script>
 
     <script id="andrade_template" type="text/x-handlebars-template">
-      <div class="container">
+      <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
@@ -36,7 +36,7 @@
     </script>
 
     <script id="godoy_template" type="text/x-handlebars-template">
-      <div class="container">
+      <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
@@ -47,6 +47,16 @@
         </li>
       </div>
     </script>
+
+    <script id="shop_template" type="text/x-handlebars-template">
+      <div class="shop_item_wrapper">
+          <li class="shop_li"><a href="#"></a>
+            <img src="{{front_img_src}}" alt="img_alt" class="shop_gallery_img">
+          </li>
+        </div>
+      </div>
+    </script>
+
   </head>
 
   <body>
@@ -74,16 +84,16 @@
     <nav>
       <ul class="main_nav_ul">
         <li class="main_nav_li collections">
-          <a href="#">Collections</a>
+          <a href="#" name="top">Collections</a>
           <ul class="collections_ul">
 
             <ul class="collection1_ul ">- Collection 1
               <li class="collection1_ul collection1_li"><a href="/" class="mojica_link">- Mojica Lookbook</a></li>
-              <li class="collection1_ul collection1_li"><a href="/andrade_editorial" class="andrade_link">- Andrade Editorial</a></li>
+              <li class="collection1_ul collection1_li"><a href="/andrade_editorial" id="andrade_link">- Andrade Editorial</a></li>
             </ul>
 
             <ul class="collection2_ul">- Collection 2
-              <li class="collection2_ul collection2_li"><a href="/godoy_lookbook" class="godoy_link">- Godoy Lookbook</a></li>
+              <li class="collection2_ul collection2_li"><a href="/godoy_lookbook" id="godoy_link">- Godoy Lookbook</a></li>
             </ul>
 
           </ul>
@@ -123,7 +133,13 @@
 
   <!-- BEGIN SHOP -->
   <div id="shop">
-    <h1>Body Ritual of the Nacirema</h1>
+    <section class="shop_banner">
+      <h1 class="shop_h1">COLLECTION 1:Body Ritual of the Nacirema</h1>
+      <h2 class="shop_h2">COLLECTION NOW AVAILABLE</h2>
+    </section>
+    <section id="shop_gallery">
+      <!-- SHOP IMAGES WILL POPULATE HERE -->
+    </section>
   </div>
 
   <!-- END SHOP -->
@@ -162,12 +178,15 @@
     <script src="scripts/data/mojica_data.js"></script>
     <script src="scripts/data/andrade_data.js"></script>
     <script src="scripts/data/godoy_data.js"></script>
+    <script src="scripts/data/shop_data.js"></script>
 
 
     <!-- VIEW SCRIPTS -->
     <script src="scripts/views/mojica_view.js"></script>
     <script src="scripts/views/andrade_view.js"></script>
     <script src="scripts/views/godoy_view.js"></script>
+    <script src="scripts/views/shop_view.js"></script>
+
 
     <!-- CONTROLLER SCRIPTS -->
     <script src="scripts/controller/shopController.js"></script>
