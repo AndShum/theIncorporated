@@ -46,3 +46,5 @@ function handleShopPage() {
   document.getElementById('shop_link').removeEventListener('click', handleShopPage, false);
 }
 document.getElementById('shop_link').addEventListener('click', handleShopPage, false);
+
+handleShopPage();
