@@ -239,24 +239,4 @@ var shopLocalData = [
     detail_9: '- ',
     detail_10: '- '
   },
-  {
-    name: '',
-    href: '',
-    front_img_src: 'img/shop/',
-    back_img_src: 'img/shop/',
-    img_alt: '',
-    description: '',
-    price: '',
-    shop_link: '',
-    detail_1: '- ',
-    detail_2: '- ',
-    detail_3: '- ',
-    detail_4: '- ',
-    detail_5: '- ',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
-  },
 ];
