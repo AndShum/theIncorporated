@@ -34,17 +34,15 @@ function handleShopPage() {
     $('#shop_gallery').append(inst.toHtml());
   });
 
-}
 
-function handleCollections() {
-  $('.collections').on('click', function() {
-    $('.collections').css({'border-bottom':'none'});
-    $('.collections_ul').addClass('showing').slideToggle('slow');
-  });
+
+  function handleCollections() {
+    $('.collections').on('click', function() {
+      $('.collections').css({'border-bottom':'none'});
+      $('.collections_ul').addClass('showing').slideToggle('slow');
+    });
+  }
+
   document.getElementById('shop_link').removeEventListener('click', handleShopPage, false);
 }
-
 document.getElementById('shop_link').addEventListener('click', handleShopPage, false);
-
-// handleCollections();
-handleShopPage();
