@@ -37,9 +37,9 @@ function handleShopPage() {
 
 
   function handleCollections() {
-    $('.collections').on('click', function() {
-      $('.collections').css({'border-bottom':'none'});
-      $('.collections_ul').addClass('showing').slideToggle('slow');
+    $('#shop_link').on('click', function() {
+      // $('.collections').css({'border-bottom':'none'});
+      // $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
 
