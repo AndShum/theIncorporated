@@ -5,8 +5,12 @@
     $('#shop').hide();
     $('#retailers').hide();
     $('#contact').hide();
-    $('#andrade_gallery').hide();
-    $('#godoy_gallery').hide();
+    $('#andrade_gallery', function() {
+      console.log(this);
+    }).hide();
+    $('#godoy_gallery', function() {
+      console.log(this);
+    }).hide();
     $('#mojica_gallery').fadeIn();
   };
 
