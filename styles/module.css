@@ -236,6 +236,18 @@ START SHOP GALLERY STYLE
   display: inline;
 }
 
+.fa-plus-square-o {
+  font-size: 25px;
+  text-align: center;
+  width: 25px;
+  height: 23px;
+  color: white;
+  background-color: rgba(24,24,24,0.75);
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+
+}
 @media only screen and (min-width: 450px) {
 
   .shop_gallery_img {
@@ -258,6 +270,15 @@ START SHOP DETAILS STYLE
 
 .details_view_info {
   display: none;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(248,248,248,.75);
+  color: black;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  border: 1px solid lightgrey;
+  box-shadow: -1px 22px 19px -8px rgba(45,45,45, 0.5);
 }
 
 #details_wrapper {

@@ -51,37 +51,41 @@
 
     <script id="shop_template" type="text/x-handlebars-template">
       <div class="shop_item_wrapper">
+        <section class="description">{{{description}}}</section>
           <p class="shop_li">
-          <img src="{{front_img_src}}" id="details_link" alt="img_alt" class="shop_gallery_img">
-         </p>
+            <img src="{{front_img_src}}" id="details_link" alt="img_alt" class="shop_gallery_img">
+          </p>
 
 
-      <div id="details_wrapper">
-        <div class="details_view_info">
-          <i class="fa fa-times" id="closing_button" aria-hidden="true"></i>
+        <div id="details_wrapper">
+          <div class="details_view_info">
+            <i class="fa fa-times" id="closing_button" aria-hidden="true"></i>
 
-          <section>
-            <img src="{{front_img_src}}" class="detail_image" alt="{{img_alt}}">
-          </section>
-          <h2 class="item_name">{{name}}</h2>
+            <section>
+              <section class="description">{{{description}}}</section>
 
-          <section class="details_info">
+              <img src="{{front_img_src}}" class="detail_image" alt="{{img_alt}}">
+            </section>
+            <h2 class="item_name">{{name}}</h2>
 
-            <div class="item_info">
-              <p class="item_details">{{detail_1}}</p>
-              <p class="item_details">{{detail_2}}</p>
-              <p class="item_details">{{detail_3}}</p>
-              <p class="item_details">{{detail_4}}</p>
-              <p class="item_details">{{detail_5}}</p>
-            </div>
+            <section class="details_info">
 
-            <div class="purchase_info">
-              <h2 class="item_price">{{price}}</h2>
-              {{{shop_link}}}
-            </div>
+              <div class="item_info">
+                <p class="item_details">{{detail_1}}</p>
+                <p class="item_details">{{detail_2}}</p>
+                <p class="item_details">{{detail_3}}</p>
+                <p class="item_details">{{detail_4}}</p>
+                <p class="item_details">{{detail_5}}</p>
+              </div>
+
+              <div class="purchase_info">
+                <h2 class="item_price">{{price}}</h2>
+                {{{shop_link}}}
+              </div>
+            </section>
+
           </div>
 
-          </section>
         </div>
       </div>
     </script>
@@ -178,9 +182,7 @@
 
   <div id="shop_details">
     <!-- SHOP DETAILS WILL POPULATE HERE -->
-    <div id="american_art_t">
 
-    </div>
   </div>
 
   <!-- END SHOP DETAILS -->
