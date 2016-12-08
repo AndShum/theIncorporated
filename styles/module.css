@@ -44,6 +44,7 @@ header {
   display: block;
 }
 
+
 /**************************
 END HEADER STYLE
 **************************/
@@ -137,6 +138,8 @@ a {
 /**************************
 START MAIN GALLERY STYLE
 **************************/
+
+
 .main_img_display {
   width: 100%;
   max-width: 321px;
@@ -151,7 +154,8 @@ START MAIN GALLERY STYLE
 }
 
 
-@media only screen and (min-width: 736px) {
+@media screen and (min-width: 736px) {
+
 
 
 #gallery_wrapper {
@@ -245,4 +249,46 @@ START SHOP GALLERY STYLE
 }
 /**************************
 END SHOP GALLERY STYLE
+**************************/
+
+/**************************
+START SHOP DETAILS STYLE
+**************************/
+
+
+.details_view_info {
+  display: none;
+}
+
+#details_wrapper {
+  width: 90%;
+}
+
+.item_name {
+  text-align: center;
+}
+
+.fa-times {
+  font-size: 25px;
+  float: right;
+  padding: 10px;
+}
+.detail_image{
+  width: 275px;
+  margin: 0 auto;
+  display: block;
+}
+
+.details_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.item_details {
+  font-size: 12px;
+}
+
+/**************************
+END SHOP DETAILS STYLE
 **************************/

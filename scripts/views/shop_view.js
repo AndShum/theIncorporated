@@ -46,3 +46,26 @@ function handleShopPage() {
   document.getElementById('shop_link').removeEventListener('click', handleShopPage, false);
 }
 document.getElementById('shop_link').addEventListener('click', handleShopPage, false);
+
+
+shopImages.handleItemDetails = function() {
+  $('#shop_gallery').on('click', '.shop_gallery_img', function() {
+    $(this).parent().parent().parent().find('.shop_gallery_img').hide();
+    $(this).parent().siblings().children().fadeToggle();
+    // $(this).parent().siblings().children().find('.fa-times').fadeToggle();
+  });
+};
+
+shopImages.handleClosingDetails = function() {
+  console.log(this);
+  $('#shop_gallery').on('click', '.fa-times', function() {
+    console.log(this);
+    $(this).siblings().show();
+
+    $(this).parent().fadeToggle();
+  });
+};
+
+shopImages.handleItemDetails();
+
+shopImages.handleClosingDetails();

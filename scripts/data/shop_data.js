@@ -1,7 +1,7 @@
 var shopLocalData = [
   {
     name: 'AMERICAN ART T',
-    href: '',
+    href: '/american_art_t',
     front_img_src: 'img/shop/american_art_t/navy_t_front.png',
     back_img_src: 'img/shop/american_art_t/navy_t_back.png',
     img_alt: 'American Art Tee',
@@ -21,7 +21,7 @@ var shopLocalData = [
   },
   {
     name: 'AMERICAN ART', //THIS IS THE RED T
-    href: '',
+    href: '/american_art',
     front_img_src: 'img/shop/american_art/red_t_front.png',
     back_img_src: 'img/shop/american_art/red_t_back.png',
     img_alt: 'American ART',
@@ -41,7 +41,7 @@ var shopLocalData = [
   },
   {
     name: 'AMERICAN GIRL',
-    href: '',
+    href: '/american_girl',
     front_img_src: 'img/shop/american_girl/tan_t_front.png',
     back_img_src: 'img/shop/american_girl/tan_t_back.png',
     img_alt: 'American Girl T',
@@ -61,7 +61,7 @@ var shopLocalData = [
   },
   {
     name: 'AMERICAN DREAM HOODIE',
-    href: '',
+    href: '/american_dream_hoodie',
     front_img_src: 'img/shop/american_dream_hoodie/blue-hoodie-front.png',
     back_img_src: 'img/shop/american_dream_hoodie/blue-hoodie-back.png',
     img_alt: 'American Dream Hoodie',
@@ -81,7 +81,7 @@ var shopLocalData = [
   },
   {
     name: 'AMERICAN REVOLUTION HOODIE',
-    href: '',
+    href: '/american_revolution_hoodie',
     front_img_src: 'img/shop/american_revolution/tan-hoody-front.png',
     back_img_src: 'img/shop/american_revolution/tan-hoody-back.png',
     img_alt: 'American Revolution Hoodie',
@@ -101,7 +101,7 @@ var shopLocalData = [
   },
   {
     name: 'AMERICAN JUSTICE STYSTEM HOODIE',
-    href: '',
+    href: '/american_justice_system_hoodie',
     front_img_src: 'img/shop/american_justice/red-hoodie-front.png',
     back_img_src: 'img/shop/american_justice/red-hoodie-back.png',
     img_alt: 'American Justice System Hoodie',
@@ -121,7 +121,7 @@ var shopLocalData = [
   },
   {
     name: 'NACIREMAN TRENCH',
-    href: '',
+    href: '/nacireman_trench_coat',
     front_img_src: 'img/shop/trench/trench-front.png',
     back_img_src: 'img/shop/trench/trench-back.png',
     img_alt: 'Nacireman Trench Coat',
@@ -141,7 +141,7 @@ var shopLocalData = [
   },
   {
     name: 'BODY RITUAL DENIM',
-    href: '',
+    href: '/body_ritual_denim',
     front_img_src: 'img/shop/denim/denim-front.png',
     back_img_src: 'img/shop/denim/denim-back.png',
     img_alt: 'Body Ritual Denim Jacket',
@@ -161,7 +161,7 @@ var shopLocalData = [
   },
   {
     name: 'REST IN PEACE TURTLENECK',
-    href: '',
+    href: '/rest_in_peace_turtleneck',
     front_img_src: 'img/shop/turtleneck/turtleneck-front.png',
     back_img_src: 'img/shop/turtleneck/turtleneck-back.png',
     img_alt: 'Rest in Peace Turtleneck Longsleeve Shirt',
@@ -181,7 +181,7 @@ var shopLocalData = [
   },
   {
     name: 'NACIREMAN CARGOS',
-    href: '',
+    href: '/nacireman_cargos',
     front_img_src: 'img/shop/cargos/cargos.png',
     back_img_src: 'img/shop/',
     img_alt: 'Nacireman Cargo Pants',
@@ -201,7 +201,7 @@ var shopLocalData = [
   },
   {
     name: 'BODY RITUAL BELT',
-    href: '',
+    href: '/body_ritual_belt',
     front_img_src: 'img/shop/belts/belts.png',
     back_img_src: 'img/shop/',
     img_alt: 'Body Ritual Belt',
@@ -221,7 +221,7 @@ var shopLocalData = [
   },
   {
     name: 'NACIREMAN TOTE',
-    href: '',
+    href: '/nacireman_tote',
     front_img_src: 'img/shop/tote/tote.png',
     back_img_src: 'img/shop/',
     img_alt: 'Nacireman Tote Bag',

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>The Incorporated</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/e3cf8e42e3.js"></script>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -50,9 +51,37 @@
 
     <script id="shop_template" type="text/x-handlebars-template">
       <div class="shop_item_wrapper">
-          <li class="shop_li"><a href="#"></a>
-            <img src="{{front_img_src}}" alt="img_alt" class="shop_gallery_img">
-          </li>
+          <p class="shop_li">
+          <img src="{{front_img_src}}" id="details_link" alt="img_alt" class="shop_gallery_img">
+         </p>
+
+
+      <div id="details_wrapper">
+        <div class="details_view_info">
+          <i class="fa fa-times" id="closing_button" aria-hidden="true"></i>
+
+          <section>
+            <img src="{{front_img_src}}" class="detail_image" alt="{{img_alt}}">
+          </section>
+          <h2 class="item_name">{{name}}</h2>
+
+          <section class="details_info">
+
+            <div class="item_info">
+              <p class="item_details">{{detail_1}}</p>
+              <p class="item_details">{{detail_2}}</p>
+              <p class="item_details">{{detail_3}}</p>
+              <p class="item_details">{{detail_4}}</p>
+              <p class="item_details">{{detail_5}}</p>
+            </div>
+
+            <div class="purchase_info">
+              <h2 class="item_price">{{price}}</h2>
+              {{{shop_link}}}
+            </div>
+          </div>
+
+          </section>
         </div>
       </div>
     </script>
@@ -131,7 +160,8 @@
   <!-- END COLLECTIONS GALLERY -->
 
 
-  <!-- BEGIN SHOP -->
+  <!-- BEGIN SHOP GALLERY -->
+
   <div id="shop">
     <section class="shop_banner">
       <h1 class="shop_h1">COLLECTION 1:Body Ritual of the Nacirema</h1>
@@ -142,8 +172,18 @@
     </section>
   </div>
 
-  <!-- END SHOP -->
+  <!-- END SHOP GALLERY-->
 
+  <!-- BEGIN SHOP DETAILS -->
+
+  <div id="shop_details">
+    <!-- SHOP DETAILS WILL POPULATE HERE -->
+    <div id="american_art_t">
+
+    </div>
+  </div>
+
+  <!-- END SHOP DETAILS -->
 
   <!-- BEGIN RETAILERS -->
   <div id="retailers">
@@ -186,10 +226,14 @@
     <script src="scripts/views/andrade_view.js"></script>
     <script src="scripts/views/godoy_view.js"></script>
     <script src="scripts/views/shop_view.js"></script>
+    <!-- <script src="scripts/views/details_view.js"></script> -->
+
+
 
 
     <!-- CONTROLLER SCRIPTS -->
     <script src="scripts/controller/shopController.js"></script>
+    <!-- <script src="scripts/views/details_controller.js"></script> -->
     <script src="scripts/controller/collectionsController.js"></script>
     <script src="scripts/controller/retailersController.js"></script>
     <script src="scripts/controller/contactController.js"></script>
