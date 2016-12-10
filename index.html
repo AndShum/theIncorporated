@@ -51,7 +51,7 @@
 
     <script id="shop_template" type="text/x-handlebars-template">
       <div class="shop_item_wrapper">
-        <section class="description">{{{description}}}</section>
+        <section class="open_description">{{{description}}}</section>
           <p class="shop_li">
             <img src="{{front_img_src}}" id="details_link" alt="img_alt" class="shop_gallery_img">
           </p>
@@ -59,13 +59,12 @@
 
         <div id="details_wrapper">
           <div class="details_view_info">
-            <i class="fa fa-times" id="closing_button" aria-hidden="true"></i>
+            <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
 
-            <section>
-              <section class="description">{{{description}}}</section>
+              <section class="close_description">{{{description}}}</section>
 
               <img src="{{front_img_src}}" class="detail_image" alt="{{img_alt}}">
-            </section>
+
             <h2 class="item_name">{{name}}</h2>
 
             <section class="details_info">
