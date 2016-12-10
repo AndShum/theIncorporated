@@ -13,11 +13,11 @@ var shopLocalData = [
     detail_3: '- DTG Printed Patch',
     detail_4: '- Screenprint',
     detail_5: '- Oversized Fit',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'AMERICAN ART', //THIS IS THE RED T
@@ -33,11 +33,11 @@ var shopLocalData = [
     detail_3: '- DTG Printed Patch',
     detail_4: '- Screenprint',
     detail_5: '- Oversized Fit',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'AMERICAN GIRL',
@@ -53,11 +53,11 @@ var shopLocalData = [
     detail_3: '- DTG Printed Patch',
     detail_4: '- Screenprint',
     detail_5: '- Oversized Fit',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'AMERICAN DREAM HOODIE',
@@ -73,11 +73,11 @@ var shopLocalData = [
     detail_3: '- DTG Printed Patch',
     detail_4: '- Screenprint',
     detail_5: '- Oversized Fit',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'AMERICAN REVOLUTION HOODIE',
@@ -92,12 +92,12 @@ var shopLocalData = [
     detail_2: '- Raw Natural Color',
     detail_3: '- Screenprint',
     detail_4: '- Oversized Fit',
-    detail_5: '- ',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_5: '',
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'AMERICAN JUSTICE STYSTEM HOODIE',
@@ -112,12 +112,12 @@ var shopLocalData = [
     detail_2: '- Hand Dyed Merlot Color',
     detail_3: '- Screenprint',
     detail_4: '- Oversized Fit',
-    detail_5: '- ',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_5: '',
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'NACIREMAN TRENCH',
@@ -131,13 +131,13 @@ var shopLocalData = [
     detail_1: '- Reconstructed Military Vintage BDU\'s',
     detail_2: '- Desert Camo Color',
     detail_3: '- Screenprint',
-    detail_4: '- ',
-    detail_5: '- ',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_4: '',
+    detail_5: '',
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'BODY RITUAL DENIM',
@@ -150,14 +150,14 @@ var shopLocalData = [
     shop_link: '<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="XG2R6JYLHL8GW"><table><tr><td><input type="hidden" name="on0" value="SIZE">SIZE</td></tr><tr><td><select name="os0"><option value="SMALL">SMALL </option><option value="MEDIUM">MEDIUM </option><option value="LARGE">LARGE </option></select> </td></tr></table><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>',
     detail_1: '- Overbleached Denim',
     detail_2: '- Nylon Webbing / Parachute Clips',
-    detail_3: '- ',
-    detail_4: '- ',
-    detail_5: '- ',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_3: '',
+    detail_4: '',
+    detail_5: '',
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'REST IN PEACE TURTLENECK',
@@ -171,13 +171,13 @@ var shopLocalData = [
     detail_1: '- Military Surplus',
     detail_2: '- Vintage Brown Color',
     detail_3: '- Screenprint',
-    detail_4: '- ',
-    detail_5: '- ',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_4: '',
+    detail_5: '',
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'NACIREMAN CARGOS',
@@ -191,13 +191,13 @@ var shopLocalData = [
     detail_1: '- Reconstructed Military Vintage Cargos',
     detail_2: '- Desert Camo Color',
     detail_3: '- Screenprint',
-    detail_4: '- ',
-    detail_5: '- ',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_4: '',
+    detail_5: '',
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'BODY RITUAL BELT',
@@ -210,14 +210,14 @@ var shopLocalData = [
     shop_link: '<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="MEH2CQVQ7DBE8"><table><tr><td><input type="hidden" name="on0" value="COLOR">COLOR</td></tr><tr><td><select name="os0"><option value="NAVY">NAVY </option><option value="MERLOT">MERLOT </option><option value="NATURAL">NATURAL </option></select> </td></tr></table><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>',
     detail_1: '- Nylon Webbing / Parachute Clip',
     detail_2: '- Screenprint',
-    detail_3: '- ',
-    detail_4: '- ',
-    detail_5: '- ',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_3: '',
+    detail_4: '',
+    detail_5: '',
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
   {
     name: 'NACIREMAN TOTE',
@@ -230,13 +230,13 @@ var shopLocalData = [
     shop_link: '<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="XRCPYKY5XUXPL"><input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>',
     detail_1: '- Raw Canvas',
     detail_2: '- Nylon Webbing / Parachute Clips',
-    detail_3: '- ',
-    detail_4: '- ',
-    detail_5: '- ',
-    detail_6: '- ',
-    detail_7: '- ',
-    detail_8: '- ',
-    detail_9: '- ',
-    detail_10: '- '
+    detail_3: '',
+    detail_4: '',
+    detail_5: '',
+    detail_6: '',
+    detail_7: '',
+    detail_8: '',
+    detail_9: '',
+    detail_10: ''
   },
 ];

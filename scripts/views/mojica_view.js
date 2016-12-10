@@ -38,6 +38,15 @@ function handleCollections() {
   });
 }
 
+mojicaImages.handleLightBox = function(event) {
+  console.log(this);
+  $('#mojica_gallery').on('click', '.lightbox', function() {
+    console.log(this);
+    $(this).children().children('.main_img_display').animate().css({'position':'absolute','max-width':'900px','width':'35%','left':'33%','top':'223px'});
+  });
+};
+
+mojicaImages.handleLightBox();
 
 
 

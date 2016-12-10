@@ -23,14 +23,6 @@ function handleGodoyPage() {
     $('#godoy_gallery').append(inst.toHtml());
   });
 
-  // function setDisplay() {
-  //   $('#godoy_link').on('click', function() {
-  //     $('#godoy_gallery').css({'display':'block'});
-  //   });
-  // }
-  //
-  // setDisplay();
-
   function handleCollections() {
     $('.collections').on('click', function() {
       $('.collections').css({'border-bottom':'none'});
@@ -41,4 +33,4 @@ function handleGodoyPage() {
 }
 document.getElementById('godoy_link').addEventListener('click', handleGodoyPage, false);
 
-handleGodoyPage();
+// handleGodoyPage();

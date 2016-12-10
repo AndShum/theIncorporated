@@ -60,7 +60,6 @@ shopImages.handleItemDetails = function(event) {
 };
 
 
-console.log('closing');
 $('#shop_gallery').on('click', '.close_description', function() {
   console.log('second closing');
   $(this).parent().fadeToggle();
