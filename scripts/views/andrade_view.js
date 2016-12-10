@@ -43,3 +43,6 @@ function handleAndradePage() {
 
 
 document.getElementById('andrade_link').addEventListener('click', handleAndradePage, false);
+
+
+handleAndradePage();
