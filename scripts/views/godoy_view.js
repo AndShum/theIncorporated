@@ -33,4 +33,4 @@ function handleGodoyPage() {
 }
 document.getElementById('godoy_link').addEventListener('click', handleGodoyPage, false);
 
-handleGodoyPage();
+$('#godoy_link').on('click', handleGodoyPage);
