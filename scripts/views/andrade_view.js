@@ -45,4 +45,4 @@ function handleAndradePage() {
 document.getElementById('andrade_link').addEventListener('click', handleAndradePage, false);
 
 
-$('#godoy_link').on('click', handleAndradePage);
+$('#andrade_link').on('click', handleAndradePage);
