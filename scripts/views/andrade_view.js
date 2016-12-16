@@ -42,7 +42,7 @@ function handleAndradePage() {
 }
 
 
-document.getElementById('andrade_link').addEventListener('click', handleAndradePage, false);
+document.getElementById('andrade_link').addEventListener('click', handleAndradePage);
 
 
-$('#andrade_link').on('click', handleAndradePage);
+handleAndradePage();

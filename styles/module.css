@@ -161,6 +161,26 @@ START MAIN GALLERY STYLE
   flex-grow: 1;
 }
 
+/*#andrade_gallery {
+  display: none;
+}
+
+#godoy_gallery {
+  display: none;
+}*/
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+  margin: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  margin: 100px;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
 
 @media screen and (min-width: 736px) {
 
@@ -309,11 +329,12 @@ START SHOP DETAILS STYLE
   display: none;
   width: 100%;
   margin: 0 auto;
+  padding: 50px 0 50px 0;
   background: rgba(248,248,248,.85);
   color: black;
-  position: absolute;
-  top: 223px;
+  position: fixed;
   left: 0;
+  bottom: 100px;
   border: 1px solid lightgrey;
   box-shadow: -1px 22px 19px -8px rgba(45,45,45, 0.5);
   z-index: 5;
@@ -350,6 +371,18 @@ START SHOP DETAILS STYLE
   font-size: 12px;
 }
 
+
 /**************************
 END SHOP DETAILS STYLE
 **************************/
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}

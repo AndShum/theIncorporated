@@ -46,7 +46,7 @@ mojicaImages.handleLightBox = function(event) {
   });
 };
 
-mojicaImages.handleLightBox();
+// mojicaImages.handleLightBox();
 
 
 
