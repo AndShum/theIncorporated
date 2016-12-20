@@ -5,7 +5,8 @@ function handleShopPage() {
     this.name = opts.name;
     this.href = opts.href;
     this.img_alt = opts.img_alt;
-    this.description = opts.description;
+    this.open_description = opts.open_description;
+    this.close_description = opts.open_description;
     this.front_img_src = opts.front_img_src;
     this.back_img_src = opts.back_img_src;
     this.price = opts.price;
@@ -48,37 +49,23 @@ function handleShopPage() {
 document.getElementById('shop_link').addEventListener('click', handleShopPage, false);
 
 
-shopImages.handleItemDetails = function() {
-  $('#shop_gallery').on('click', '.description', function() {
+
+
+
+
+shopImages.handleItemDetails = function(event) {
+  $('#shop_gallery').on('click', '.open_description', function() {
     console.log(this);
-    // $(this).parent().parent().parent().find('.shop_gallery_img').hide();
-    $(this).siblings().children().fadeIn('fast').addClass('open').css({'display':'block'});
-    console.log('some shit');
-    // $(this).find('#details_wrapper').children().children().find('fa-times').hide();
-
-    // $(this).parent().siblings().children().find('.fa-times').fadeToggle();
+    $(this).siblings('#details_wrapper').children().fadeToggle('fast');
   });
 };
 
-shopImages.handleClosingDetails = function() {
-  console.log('closing');
-  $('#shop_gallery').on('click', '.open', function() {
-    console.log('second closing');
-    $(this).parent().fadeOut().removeClass('open');
-  });
-};
 
-//   console.log(this);
-//   $('#shop_gallery').on('click', '.fa-times', function() {
-//     console.log(this);
-//     $(this).parent().parent().hide();
-//     console.log(this);
-//
-//     $(this).parent().parent().parent().siblings().find('.shop_gallery_img').fadeToggle();
-//
-//   });
-// };
-//
+$('#shop_gallery').on('click', '.close_description', function() {
+  console.log('second closing');
+  $(this).parent().fadeToggle();
+});
+
+handleShopPage();
 shopImages.handleItemDetails();
 //
-shopImages.handleClosingDetails();
