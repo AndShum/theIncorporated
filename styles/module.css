@@ -402,7 +402,7 @@ END SHOP DETAILS STYLE
 
 
 /**************************
-START SHOP DETAILS STYLE
+START RETAILERS STYLE
 **************************/
 
 #map {
@@ -422,3 +422,7 @@ START SHOP DETAILS STYLE
 .retailers_href:hover {
   color: lightgrey;
 }
+
+/**************************
+END RETAILERS STYLE
+**************************/
