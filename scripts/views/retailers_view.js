@@ -84,7 +84,7 @@ var lessons = {
 
 function initMap() {
   minZoomLevel = 2;
-  var center = {lat: 28.373031, lng: -0.211098};
+  var center = {lat: 24.533116, lng: -126.128945};
   var map = new google.maps.Map(document.getElementById('map'), {
     center: center,
     zoom: minZoomLevel,
