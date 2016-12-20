@@ -6,7 +6,7 @@ function handleShopPage() {
     this.href = opts.href;
     this.img_alt = opts.img_alt;
     this.open_description = opts.open_description;
-    this.close_description = opts.close_description;
+    this.close_description = opts.open_description;
     this.front_img_src = opts.front_img_src;
     this.back_img_src = opts.back_img_src;
     this.price = opts.price;

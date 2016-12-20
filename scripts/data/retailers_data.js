@@ -15,9 +15,19 @@ var retailersLocalData = [
     href: 'http://www.a-ma-maniere.com/',
   },
   {
+    name: 'Vfiles',
+    address: '12 Mercer St, New York, NY 10013',
+    href: 'https://www.vfiles.com',
+  },
+  {
     name: 'km20',
     address: 'ul.kuznetskiy Most, 20, Moscow, Russia, 107031',
     href: 'http://en.km20.ru/',
+  },
+  {
+    name: 'Ejder',
+    address: 'Subway 4, Old Street Station, EC1Y 1BE, London, UK',
+    href: 'http://www.ejderforlife.com/',
   },
   {
     name: 'Luisa Via Roma',
