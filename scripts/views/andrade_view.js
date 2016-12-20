@@ -37,7 +37,7 @@ function handleAndradePage() {
       $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
-  document.getElementById('andrade_link').removeEventListener('click', handleAndradePage, false);
+  // document.getElementById('andrade_link').removeEventListener('click', handleAndradePage, false);
 
 }
 
@@ -45,4 +45,4 @@ function handleAndradePage() {
 document.getElementById('andrade_link').addEventListener('click', handleAndradePage, false);
 
 
-handleAndradePage();
+// handleAndradePage();
