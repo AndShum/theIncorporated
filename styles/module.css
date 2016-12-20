@@ -388,3 +388,13 @@ START SHOP DETAILS STYLE
   margin: 0 auto;
   border: 1px solid black;
 }
+
+.stores_wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.retailers_href:hover {
+  color: lightgrey;
+}

@@ -92,7 +92,9 @@
 
     <script id="retailers_template" type="text/x-handlebars-template">
       <div class="stores_wrapper">
-
+        <h1 class="retailers_h1">{{name}}</h1>
+        <p class="retailers_p">{{address}}</p>
+        <a href="{{href}}" class="retailers_href">{{href}}</a>
       </div>
     </script>
 
@@ -199,6 +201,10 @@
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ7tpN86L2UQLBGqi01euPBVwDqiQu6_s&callback=initMap"></script>
 
     </div>
+
+    <div id="retailers_list">
+      <!-- RETAILERS WILL POPULATE HERE -->
+    </div>
   </div>
   <!-- END RETAILERS -->
 
@@ -244,7 +250,7 @@
     <script src="scripts/data/andrade_data.js"></script>
     <script src="scripts/data/godoy_data.js"></script>
     <script src="scripts/data/shop_data.js"></script>
-
+    <script src="scripts/data/retailers_data.js"></script>
 
     <!-- VIEW SCRIPTS -->
     <script src="scripts/views/mojica_view.js"></script>

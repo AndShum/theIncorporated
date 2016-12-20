@@ -10,7 +10,7 @@ var retailersLocalData = [
     href: 'http://ansh46.com/',
   },
   {
-    name: 'A Ma Mani$Eacutere',
+    name: 'A Ma Maniere',
     address: '969 Marietta St #200, Atlanta, GA 30318',
     href: 'http://www.a-ma-maniere.com/',
   },
