@@ -426,3 +426,29 @@ START RETAILERS STYLE
 /**************************
 END RETAILERS STYLE
 **************************/
+
+/**************************
+START CONTACT STYLE
+**************************/
+
+.contact_container {
+  padding: 20px 0 20px 0;
+}
+
+.contact_title {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.25em;
+}
+
+.contact_email {
+  text-align: center;
+  font-style: italic;
+}
+
+.contact_email :hover {
+  color: lightgrey;
+}
+/**************************
+END CONTACT STYLE
+**************************/
