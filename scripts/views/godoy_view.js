@@ -29,8 +29,8 @@ function handleGodoyPage() {
       $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
-  document.getElementById('godoy_link').removeEventListener('click', handleGodoyPage, false);
+  $('#godoy_link').on('click', handleGodoyPage);
 }
-document.getElementById('godoy_link').addEventListener('click', handleGodoyPage, false);
+$('#godoy_link').on('click', handleGodoyPage);
 
-handleGodoyPage();
+// handleGodoyPage();

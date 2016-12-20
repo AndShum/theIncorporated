@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/module.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
     <script id="mojica_template" type="text/x-handlebars-template">
       <div class="container lightbox">
         <li class="main_img_li">
@@ -86,6 +87,14 @@
           </div>
 
         </div>
+      </div>
+    </script>
+
+    <script id="retailers_template" type="text/x-handlebars-template">
+      <div class="stores_wrapper">
+        <h1 class="retailers_h1">{{name}}</h1>
+        <p class="retailers_p">{{address}}</p>
+        <a href="{{href}}" class="retailers_href">{{href}}</a>
       </div>
     </script>
 
@@ -188,7 +197,14 @@
 
   <!-- BEGIN RETAILERS -->
   <div id="retailers">
-    <h1>retailers</h1>
+    <div id="map">
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ7tpN86L2UQLBGqi01euPBVwDqiQu6_s&callback=initMap"></script>
+
+    </div>
+
+    <div id="retailers_list">
+      <!-- RETAILERS WILL POPULATE HERE -->
+    </div>
   </div>
   <!-- END RETAILERS -->
 
@@ -237,14 +253,14 @@
     <script src="scripts/data/andrade_data.js"></script>
     <script src="scripts/data/godoy_data.js"></script>
     <script src="scripts/data/shop_data.js"></script>
-
+    <script src="scripts/data/retailers_data.js"></script>
 
     <!-- VIEW SCRIPTS -->
     <script src="scripts/views/mojica_view.js"></script>
     <script src="scripts/views/andrade_view.js"></script>
     <script src="scripts/views/godoy_view.js"></script>
     <script src="scripts/views/shop_view.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script src="scripts/views/retailers_view.js"></script>
     <!-- <script src="scripts/views/details_view.js"></script> -->
 
 
