@@ -4,6 +4,7 @@ function handleRetailersPage() {
   function RetailersGallery(opts) {
     this.name = opts.name;
     this.address = opts.address;
+    this.address_href = opts.address_href;
     this.href = opts.href;
   }
 

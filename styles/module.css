@@ -334,7 +334,7 @@ START SHOP DETAILS STYLE
   width: 100%;
   margin: 0 auto;
   padding: 50px 0 50px 0;
-  background: rgba(248,248,248,.85);
+  background: rgba(248,248,248,.90);
   color: black;
   position: fixed;
   left: 0;
@@ -393,6 +393,13 @@ START RETAILERS STYLE
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.retailers_href {
+  display: block;
+  padding: 10px 0;
+  margin: 5px 0;
+  width: auto;
 }
 
 .retailers_href:hover {
