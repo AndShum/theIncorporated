@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/module.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="shortcut icon" href="img/inc_logo.ico" type="image/x-icon">
 
     <script id="mojica_template" type="text/x-handlebars-template">
       <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
-          <img src="{{main_img_src}}" alt="img_alt" class="main_img_display">
+          <a href={{main_img_src}}><img src="{{main_img_src}}" alt="img_alt" class="main_img_display"></a>
           <!-- description has been set to display: none for mobile view -->
 
           <p class=mojica_description>{{description}}</p>
@@ -29,7 +30,7 @@
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
-          <img src="{{main_img_src}}" alt="img_alt" class="main_img_display">
+          <a href={{main_img_src}}><img src="{{main_img_src}}" alt="img_alt" class="main_img_display"></a>
           <!-- description has been set to display: none for mobile view -->
 
           <!-- <p class=mojica_description>{{description}}</p> -->
@@ -42,7 +43,7 @@
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
-          <img src="{{main_img_src}}" alt="img_alt" class="main_img_display">
+          <a href={{main_img_src}}><img src="{{main_img_src}}" alt="img_alt" class="main_img_display"></a>
           <!-- description has been set to display: none for mobile view -->
 
           <!-- <p class=mojica_description>{{description}}</p> -->
@@ -240,8 +241,6 @@
 
 
 
-    <script src="scripts/preventRefresh.js"></script>
-
     <!-- VENDOR SCRIPTS -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -263,9 +262,6 @@
     <script src="scripts/views/retailers_view.js"></script>
     <!-- <script src="scripts/views/details_view.js"></script> -->
 
-
-
-
     <!-- CONTROLLER SCRIPTS -->
     <script src="scripts/controller/shopController.js"></script>
     <!-- <script src="scripts/views/details_controller.js"></script> -->
@@ -275,6 +271,10 @@
     <script src="scripts/controller/andradeController.js"></script>
     <script src="scripts/controller/godoyController.js"></script>
     <script src="scripts/controller/routes.js"></script>
+
+    <!-- MISCELLANEOUS SCRIPTS -->
+    <script src="scripts/preventRefresh.js"></script>
+    <script src="scripts/lightbox.js"></script>
 
     <!-- GOOGLE ANALYTICS -->
     <script>

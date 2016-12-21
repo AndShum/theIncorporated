@@ -1,38 +1,32 @@
-// Create a lightbox
-(function() {
-  var $lightbox = $("<div class='lightbox'></div>");
-  var $img = $("<img>");
-  var $caption = $("<p class='caption'></p>");
 
-  // Add image and caption to lightbox
+function handleLightBox() {
+  var $overlay = $('<div id="overlay"></div>');
+  var $image = $('<img>');
 
-  $lightbox
-    .append($img)
-    .append($caption);
 
-  // Add lighbox to document
+  $overlay.append($image);
 
-  $('body').append($lightbox);
+  $('body').append($overlay);
 
-  $('.lightbox-gallery img').click(function(e) {
-    e.preventDefault();
 
-    // Get image link and description
-    var src = $(this).attr("src");
-    var cap = $(this).attr("alt");
 
-    // Add data to lighbox
+  $('.gallery a').click(function(event) {
+  	 event.preventDefault();
+  	 var imageLocation = $(this).attr('href');
+  	 $image.attr('src', imageLocation);
 
-    $img.attr('src', src);
-    $caption.text(cap);
 
-    // Show lightbox
+  	 $overlay.fadeIn('fast');
 
-    $lightbox.fadeIn('fast');
 
-    $lightbox.click(function() {
-      $lightbox.fadeOut('fast');
-    });
+
   });
 
-}());
+
+  $overlay.click(function(){
+    $overlay.fadeOut('fast');
+  });
+
+}
+
+handleLightBox();

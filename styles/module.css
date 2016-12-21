@@ -184,6 +184,22 @@ START MAIN GALLERY STYLE
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
+#overlay {
+	background: rgba(0,0,0,0.70);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  display: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+#overlay img {
+  margin-top: 10%;
+}
+
 @media screen and (min-width: 736px) {
 
   #gallery_wrapper {
