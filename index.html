@@ -130,18 +130,18 @@
 
             <ul class="collection1_ul ">- Collection 1
               <li class="collection1_ul collection1_li"><a href="/" class="mojica_link">- Mojica Lookbook</a></li>
-              <li class="collection1_ul collection1_li"><a href="/andrade_editorial" id="andrade_link">- Andrade Editorial</a></li>
+              <li class="collection1_ul collection1_li" id="andrade_link"><a href="/andrade_editorial">- Andrade Editorial</a></li>
             </ul>
 
             <ul class="collection2_ul">- Collection 2
-              <li class="collection2_ul collection2_li"><a href="/godoy_lookbook" id="godoy_link">- Godoy Lookbook</a></li>
+              <li class="collection2_ul collection2_li" id="godoy_link"><a href="/godoy_lookbook">- Godoy Lookbook</a></li>
             </ul>
 
           </ul>
         </li>
           <!-- sub nav set to display:none for dropdown menu -->
 
-        <li class="main_nav_li" id="shop_link"><a href="/shop" >Shop</a></li>
+        <li class="main_nav_li" id="shop_link"><a href="/shop">Shop</a></li>
         <li class="main_nav_li" id="retailers_link"><a href="/retailers">Retailers</a></li>
         <li class="main_nav_li" id="contact_link"><a href="/contact">Contact</a></li>
       </ul>
@@ -239,6 +239,9 @@
     </footer>
 
 
+
+    <script src="scripts/preventRefresh.js"></script>
+
     <!-- VENDOR SCRIPTS -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -272,6 +275,17 @@
     <script src="scripts/controller/andradeController.js"></script>
     <script src="scripts/controller/godoyController.js"></script>
     <script src="scripts/controller/routes.js"></script>
+
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-81745206-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
   </body>
 </html>

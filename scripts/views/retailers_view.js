@@ -48,7 +48,7 @@ handleRetailersPage();
 
 
 var gr8 = {
-  content: '<img src="http://gr8.jp/image/logo2.png" style="width:40px; height:40px">',
+  content: '<img src="" style="width:40px; height:40px">',
   latlong: {lat: 35.669123, lng: 139.705439},
 };
 
@@ -84,7 +84,7 @@ var lessons = {
 
 function initMap() {
   minZoomLevel = 2;
-  var center = {lat: 28.373031, lng: -0.211098};
+  var center = {lat: 24.533116, lng: -126.128945};
   var map = new google.maps.Map(document.getElementById('map'), {
     center: center,
     zoom: minZoomLevel,
