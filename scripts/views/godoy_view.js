@@ -20,7 +20,7 @@ function handleGodoyPage() {
   });
 
   godoyImages.forEach(function(inst) {
-    $('#godoy_gallery').parent().append(inst.toHtml());
+    $('#godoy_gallery').append(inst.toHtml());
     console.log(this);
   });
 
