@@ -188,7 +188,7 @@ START MAIN GALLERY STYLE
 	background: rgba(0,0,0,0.70);
 	width: 100%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
   display: none;
@@ -350,7 +350,7 @@ START SHOP DETAILS STYLE
   width: 100%;
   margin: 0 auto;
   padding: 50px 0 50px 0;
-  background: rgba(248,248,248,.90);
+  background: rgba(248,248,248,.98);
   color: black;
   position: fixed;
   left: 0;
