@@ -1,4 +1,6 @@
 var andradeImages = [];
+var width = $(window).width();
+
 
 function handleAndradePage() {
   function AndradeGallery(opts) {
@@ -37,15 +39,14 @@ function handleAndradePage() {
       $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
-  // document.getElementById('andrade_link').removeEventListener('click', handleAndradePage, false);
-
 }
 
-
-// document.getElementById('andrade_link').addEventListener('click', handleAndradePage, false);
-
 $('#andrade_link').on('click', function() {
-  $('#andrade_gallery').fadeToggle().css({'display':'flex','justify-content':'flex-start','position':'static'});
+  if(width < 736){
+    $('#andrade_gallery').fadeToggle().css({'display':'block'});
+  } else {
+    $('#andrade_gallery').fadeToggle().css({'display':'flex','justify-content':'flex-start','position':'static'});
+  }
 });
 
 handleAndradePage();

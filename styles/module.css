@@ -147,7 +147,9 @@ a {
 START MAIN GALLERY STYLE
 **************************/
 
-
+.gallery {
+  display: block;
+}
 .main_img_display {
   width: 100%;
   max-width: 321px;
@@ -184,41 +186,19 @@ START MAIN GALLERY STYLE
 
 @media screen and (min-width: 736px) {
 
-
-
-#gallery_wrapper {
-  display: block;
-  margin: 0 auto;
-  max-width: 1284px;
-  overflow-x: scroll;
-
-
-}
-
-.gallery {
-  display: flex;
-  justify-content:flex-start;
-  position: static;
-
-  }
-
-  /*#mojica_gallery .main_img_display{
-    width: 321px;
+  #gallery_wrapper {
     display: block;
     margin: 0 auto;
+    max-width: 1284px;
+    overflow-x: scroll;
   }
 
-  #andrade_gallery .main_img_display{
-    width: 321px;
-    display: block;
-    margin: 0 auto;
-  }
+  .gallery {
+    display: flex;
+    justify-content:flex-start;
+    position: static;
 
-  #godoy_gallery .main_img_display{
-    width: 321px;
-    display: block;
-    margin: 0 auto;
-  }*/
+  }
 
   .main_img_display {
     width: 321px;
