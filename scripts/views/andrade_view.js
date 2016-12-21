@@ -23,6 +23,13 @@ function handleAndradePage() {
     $('#andrade_gallery').append(inst.toHtml());
   });
 
+  // function setDisplay() {
+  //   $('#andrade_link').on('click', function() {
+  //     $('#andrade_gallery').css({'display':'flex'});
+  //   });
+  // }
+  //
+  // setDisplay();
 
   function handleCollections() {
     $('.collections').on('click', function() {
@@ -30,10 +37,12 @@ function handleAndradePage() {
       $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
+  document.getElementById('andrade_link').removeEventListener('click', handleAndradePage, false);
+
 }
 
 
-$('.andrade_link').on('click', function(e) {
-  handleAndradePage();
-});
-// handleCollections();
+document.getElementById('andrade_link').addEventListener('click', handleAndradePage, false);
+
+
+// handleAndradePage();

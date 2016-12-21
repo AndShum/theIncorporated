@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8">
     <title>The Incorporated</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/e3cf8e42e3.js"></script>
     <link rel="stylesheet" href="vendor/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/module.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
     <script id="mojica_template" type="text/x-handlebars-template">
-      <div class="container">
+      <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
@@ -23,7 +25,7 @@
     </script>
 
     <script id="andrade_template" type="text/x-handlebars-template">
-      <div class="container">
+      <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
@@ -36,7 +38,7 @@
     </script>
 
     <script id="godoy_template" type="text/x-handlebars-template">
-      <div class="container">
+      <div class="container lightbox">
         <li class="main_img_li">
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
@@ -47,6 +49,55 @@
         </li>
       </div>
     </script>
+
+    <script id="shop_template" type="text/x-handlebars-template">
+      <div class="shop_item_wrapper">
+        <section class="open_description">{{{open_description}}}</section>
+          <p class="shop_li">
+            <img src="{{front_img_src}}" id="details_link" alt="img_alt" class="shop_gallery_img">
+          </p>
+
+
+        <div id="details_wrapper">
+          <div class="details_view_info">
+            <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+
+              <section class="close_description">{{{close_description}}}</section>
+
+              <img src="{{front_img_src}}" class="detail_image" alt="{{img_alt}}">
+
+            <h2 class="item_name">{{name}}</h2>
+
+            <section class="details_info">
+
+              <div class="item_info">
+                <p class="item_details">{{detail_1}}</p>
+                <p class="item_details">{{detail_2}}</p>
+                <p class="item_details">{{detail_3}}</p>
+                <p class="item_details">{{detail_4}}</p>
+                <p class="item_details">{{detail_5}}</p>
+              </div>
+
+              <div class="purchase_info">
+                <h2 class="item_price">{{price}}</h2>
+                {{{shop_link}}}
+              </div>
+            </section>
+
+          </div>
+
+        </div>
+      </div>
+    </script>
+
+    <script id="retailers_template" type="text/x-handlebars-template">
+      <div class="stores_wrapper">
+        <h1 class="retailers_h1">{{name}}</h1>
+        <p class="retailers_p">{{address}}</p>
+        <a href="{{href}}" class="retailers_href">{{href}}</a>
+      </div>
+    </script>
+
   </head>
 
   <body>
@@ -74,25 +125,25 @@
     <nav>
       <ul class="main_nav_ul">
         <li class="main_nav_li collections">
-          <a href="#">Collections</a>
+          <a href="#" name="top">Collections</a>
           <ul class="collections_ul">
 
             <ul class="collection1_ul ">- Collection 1
               <li class="collection1_ul collection1_li"><a href="/" class="mojica_link">- Mojica Lookbook</a></li>
-              <li class="collection1_ul collection1_li"><a href="/andrade_editorial" class="andrade_link">- Andrade Editorial</a></li>
+              <li class="collection1_ul collection1_li" id="andrade_link"><a href="/andrade_editorial">- Andrade Editorial</a></li>
             </ul>
 
             <ul class="collection2_ul">- Collection 2
-              <li class="collection2_ul collection2_li"><a href="/godoy_lookbook" class="godoy_link">- Godoy Lookbook</a></li>
+              <li class="collection2_ul collection2_li" id="godoy_link"><a href="/godoy_lookbook">- Godoy Lookbook</a></li>
             </ul>
 
           </ul>
         </li>
           <!-- sub nav set to display:none for dropdown menu -->
 
-        <li class="main_nav_li"><a href="/shop">Shop</a></li>
-        <li class="main_nav_li"><a href="/retailers">Locations</a></li>
-        <li class="main_nav_li"><a href="/contact">Contact</a></li>
+        <li class="main_nav_li" id="shop_link"><a href="/shop">Shop</a></li>
+        <li class="main_nav_li" id="retailers_link"><a href="/retailers">Retailers</a></li>
+        <li class="main_nav_li" id="contact_link"><a href="/contact">Contact</a></li>
       </ul>
     </nav>
 
@@ -121,24 +172,59 @@
   <!-- END COLLECTIONS GALLERY -->
 
 
-  <!-- BEGIN SHOP -->
+  <!-- BEGIN SHOP GALLERY -->
+
   <div id="shop">
-    <h1>Body Ritual of the Nacirema</h1>
+    <section class="shop_banner">
+      <h1 class="shop_h1">COLLECTION 1:Body Ritual of the Nacirema</h1>
+      <h2 class="shop_h2">COLLECTION NOW AVAILABLE</h2>
+    </section>
+    <section id="shop_gallery">
+      <!-- SHOP IMAGES WILL POPULATE HERE -->
+    </section>
   </div>
 
-  <!-- END SHOP -->
+  <!-- END SHOP GALLERY-->
 
+  <!-- BEGIN SHOP DETAILS -->
+
+  <div id="shop_details">
+    <!-- SHOP DETAILS WILL POPULATE HERE -->
+
+  </div>
+
+  <!-- END SHOP DETAILS -->
 
   <!-- BEGIN RETAILERS -->
   <div id="retailers">
-    <h1>retailers</h1>
+    <div id="map">
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJ7tpN86L2UQLBGqi01euPBVwDqiQu6_s&callback=initMap"></script>
+
+    </div>
+
+    <div id="retailers_list">
+      <!-- RETAILERS WILL POPULATE HERE -->
+    </div>
   </div>
-  <!-- END LOCATIONS -->
+  <!-- END RETAILERS -->
 
 
   <!-- BEGIN CONTACT -->
   <div id="contact">
-    <h1>Contact</h1>
+      <div class="contact_container">
+        <p class="contact_title">FOR CUSTOMER SERVICE -</p>
+        <p class="contact_email"><a href="mailto:theincorporated.mcginnis@gmail.com">THEINCORPORATED.MCGINNIS@GMAIL.COM</a></p>
+      </div>
+      <div class="contact_container">
+        <p class="contact_title">FOR PRESS INQUIRIES -</p>
+        <p class="contact_email"><a href="mailto:theincorporated.press@gmail.com">THEINCORPORATED.PRESS@GMAIL.COM</a></p>
+      </div><div class="contact_container">
+        <p class="contact_title">FOR GENERAL INQUIRIES -</p>
+        <p class="contact_email"><a href="mailto:theincorporated.info@gmail.com">THEINCORPORATED.INFO@GMAIL.COM</a></p>
+      </div><div class="contact_container">
+        <p class="contact_title">FOR SALES INQUIRIES -</p>
+        <p class="contact_email"><a href="mailto:hello@nimano-berlin.com">HELLO@NIMANO-BERLIN.COM</a></p>
+      </div>
   </div>
   <!-- END CONTACT -->
 
@@ -152,6 +238,10 @@
       <p>IF YOU DON'T STAND FOR ANYTHING, DON'T STAND IN OUR CLOTHING<p>
     </footer>
 
+
+
+    <script src="scripts/preventRefresh.js"></script>
+
     <!-- VENDOR SCRIPTS -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -162,21 +252,40 @@
     <script src="scripts/data/mojica_data.js"></script>
     <script src="scripts/data/andrade_data.js"></script>
     <script src="scripts/data/godoy_data.js"></script>
-
+    <script src="scripts/data/shop_data.js"></script>
+    <script src="scripts/data/retailers_data.js"></script>
 
     <!-- VIEW SCRIPTS -->
     <script src="scripts/views/mojica_view.js"></script>
     <script src="scripts/views/andrade_view.js"></script>
     <script src="scripts/views/godoy_view.js"></script>
+    <script src="scripts/views/shop_view.js"></script>
+    <script src="scripts/views/retailers_view.js"></script>
+    <!-- <script src="scripts/views/details_view.js"></script> -->
+
+
+
 
     <!-- CONTROLLER SCRIPTS -->
     <script src="scripts/controller/shopController.js"></script>
+    <!-- <script src="scripts/views/details_controller.js"></script> -->
     <script src="scripts/controller/collectionsController.js"></script>
     <script src="scripts/controller/retailersController.js"></script>
     <script src="scripts/controller/contactController.js"></script>
     <script src="scripts/controller/andradeController.js"></script>
     <script src="scripts/controller/godoyController.js"></script>
     <script src="scripts/controller/routes.js"></script>
+
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-81745206-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
   </body>
 </html>

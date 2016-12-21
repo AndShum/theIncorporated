@@ -23,17 +23,14 @@ function handleGodoyPage() {
     $('#godoy_gallery').append(inst.toHtml());
   });
 
-
   function handleCollections() {
     $('.collections').on('click', function() {
       $('.collections').css({'border-bottom':'none'});
       $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
+  document.getElementById('godoy_link').removeEventListener('click', handleGodoyPage, false);
 }
+document.getElementById('godoy_link').addEventListener('click', handleGodoyPage, false);
 
-
-$('.godoy_link').on('click', function(e) {
-  handleGodoyPage();
-});
-// handleCollections();
+// handleGodoyPage();
