@@ -48,7 +48,7 @@ handleRetailersPage();
 
 
 var gr8 = {
-  content: '<img src="http://gr8.jp/image/logo2.png" style="width:40px; height:40px">',
+  content: '<img src="" style="width:40px; height:40px">',
   latlong: {lat: 35.669123, lng: 139.705439},
 };
 
