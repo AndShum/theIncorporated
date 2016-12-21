@@ -45,7 +45,7 @@ function handleAndradePage() {
 // document.getElementById('andrade_link').addEventListener('click', handleAndradePage, false);
 
 $('#andrade_link').on('click', function() {
-  $('#andrade_gallery').css({'display':'flex','justify-content':'flex-start','position':'static'});
+  $('#andrade_gallery').fadeToggle().css({'display':'flex','justify-content':'flex-start','position':'static'});
 });
 
 handleAndradePage();

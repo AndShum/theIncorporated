@@ -21,7 +21,6 @@ function handleGodoyPage() {
 
   godoyImages.forEach(function(inst) {
     $('#godoy_gallery').append(inst.toHtml());
-    console.log(this);
   });
 
   function handleCollections() {
@@ -30,9 +29,12 @@ function handleGodoyPage() {
       $('.collections_ul').addClass('showing').slideToggle('slow');
     });
   }
-  document.getElementById('godoy_link').removeEventListener('click', handleGodoyPage, false);
-  console.log(this);
+  // document.getElementById('godoy_link').removeEventListener('click', handleGodoyPage, false);
 }
-document.getElementById('godoy_link').addEventListener('click', handleGodoyPage, false);
+// document.getElementById('godoy_link').addEventListener('click', handleGodoyPage, false);
 
-// handleGodoyPage();
+$('#godoy_link').on('click', function() {
+  $('#godoy_gallery').fadeToggle().css({'display':'flex','justify-content':'flex-start','position':'static'});
+});
+
+handleGodoyPage();
