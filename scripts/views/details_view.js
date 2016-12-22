@@ -46,3 +46,7 @@ function handleDetailsPage() {
   document.getElementById('details_link').removeEventListener('click', handleDetailsPage, false);
 }
 document.getElementById('details_link').addEventListener('click', handleDetailsPage, false);
+
+$('.fa-plus-square-o').on('click', function() {
+  $('#details_wrapper').css({'display':'flex', 'justify-content':'center', 'align-items':'center'});
+});

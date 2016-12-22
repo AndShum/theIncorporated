@@ -197,7 +197,10 @@ START MAIN GALLERY STYLE
 }
 
 #overlay img {
-  margin-top: 10%;
+max-width: 100%;
+/*left: 50%;
+top: 50%;
+position: absolute;*/
 }
 
 @media screen and (min-width: 736px) {
@@ -353,7 +356,7 @@ START SHOP DETAILS STYLE
   color: black;
   position: fixed;
   left: 0;
-  bottom: 100px;
+  bottom: 0;
   border: 1px solid lightgrey;
   box-shadow: -1px 22px 19px -8px rgba(45,45,45, 0.5);
   z-index: 5;
@@ -429,6 +432,17 @@ START RETAILERS STYLE
     height: 500px;
     margin: 0 auto;
     border: 1px solid black;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .detail_image {
+    float: left;
+    padding-left: 10px;
+  }
+
+  .details_info {
+    padding-right: 15px;
   }
 }
 /**************************

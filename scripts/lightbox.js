@@ -18,7 +18,7 @@ function handleLightBox() {
   	 $image.attr('src', imageLocation);
 
 
-  	 $overlay.fadeIn('fast');
+  	 $overlay.css({'display':'flex', 'justify-content':'center', 'align-items':'center'}).fadeIn('fast');
 
     console.log(this);
 
@@ -30,5 +30,6 @@ function handleLightBox() {
   });
 
 }
+
 
 handleLightBox();

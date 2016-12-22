@@ -57,6 +57,7 @@ shopImages.handleItemDetails = function(event) {
   $('#shop_gallery').on('click', '.open_description', function() {
     console.log(this);
     $(this).siblings('#details_wrapper').children().fadeToggle('fast');
+    $(this).siblings('#details_wrapper').css({'display':'flex', 'justify-content':'center', 'align-items':'center'});
   });
 };
 
@@ -65,6 +66,8 @@ $('#shop_gallery').on('click', '.close_description', function() {
   console.log('second closing');
   $(this).parent().fadeToggle();
 });
+
+
 
 handleShopPage();
 shopImages.handleItemDetails();
