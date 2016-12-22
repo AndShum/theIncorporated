@@ -210,7 +210,7 @@ START MAIN GALLERY STYLE
   }
 
   .gallery {
-    display: flex;
+    display: inline-flex;
     justify-content:flex-start;
     position: static;
 

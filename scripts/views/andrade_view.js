@@ -45,7 +45,7 @@ $('#andrade_link').on('click', function() {
   if(width < 736){
     $('#andrade_gallery').fadeToggle().css({'display':'block'});
   } else {
-    $('#andrade_gallery').fadeToggle().css({'display':'flex','justify-content':'flex-start','position':'static'});
+    $('#andrade_gallery').fadeToggle().css({'display':'inline-flex','justify-content':'flex-start','position':'static'});
   }
 });
 
