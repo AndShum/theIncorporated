@@ -10,10 +10,10 @@ function handleLightBox() {
 
 
 
-  $('.gallery a').click(function(event) {
+  $('.gallery img').click(function(event) {
   	 event.preventDefault();
     console.log(this);
-  	 var imageLocation = $(this).attr('href');
+  	 var imageLocation = $(this).attr('src');
     console.log(this);
   	 $image.attr('src', imageLocation);
 

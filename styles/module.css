@@ -424,6 +424,10 @@ START RETAILERS STYLE
   color: lightgrey;
 }
 
+.details_info {
+  padding: 0 10px;
+}
+
 @media only screen and (min-width: 800px) {
   #map {
     display: block;
@@ -445,6 +449,11 @@ START RETAILERS STYLE
     padding-right: 15px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .stores_wrapper {
+    font-size: .85em}
+  }
 /**************************
 END RETAILERS STYLE
 **************************/
@@ -470,6 +479,12 @@ START CONTACT STYLE
 
 .contact_email :hover {
   color: lightgrey;
+}
+
+@media only screen and (max-width: 400px) {
+.contact_email {
+  font-size: .75em;
+}
 }
 /**************************
 END CONTACT STYLE

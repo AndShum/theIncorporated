@@ -1,7 +1,6 @@
 var andradeImages = [];
 var width = $(window).width();
 
-
 function handleAndradePage() {
   function AndradeGallery(opts) {
     this.main_img_src = opts.main_img_src;
@@ -24,14 +23,6 @@ function handleAndradePage() {
   andradeImages.forEach(function(inst) {
     $('#andrade_gallery').append(inst.toHtml());
   });
-
-  // function setDisplay() {
-  //   $('#andrade_link').on('click', function() {
-  //     $('#andrade_gallery').css({'display':'flex'});
-  //   });
-  // }
-  //
-  // setDisplay();
 
   function handleCollections() {
     $('.collections').on('click', function() {
