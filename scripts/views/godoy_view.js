@@ -25,12 +25,6 @@ function handleGodoyPage() {
     $('#godoy_gallery').append(inst.toHtml());
   });
 
-  function handleCollections() {
-    $('.collections').on('click', function() {
-      $('.collections').css({'border-bottom':'none'});
-      $('.collections_ul').addClass('showing').slideToggle('slow');
-    });
-  }
 }
 
 $('#godoy_link').on('click', function() {

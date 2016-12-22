@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Berthold';
+  src: url('fonts/Berthold Akzidenz Grotesk BE Su Regular.otf') format('opentype');
+}
+
 html {
   height: 100%;
 }
@@ -7,6 +12,18 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   height: 100%;
+}
+
+.details_info {
+  font-family: serif;
+}
+
+.retailers_href {
+  font-family: serif;
+}
+
+.contact_email {
+  font-family: serif;
 }
 
 li {

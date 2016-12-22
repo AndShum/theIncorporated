@@ -390,9 +390,23 @@ START SHOP DETAILS STYLE
 
 
 .item_details {
-  font-size: 12px;
+  font-size: .80em;
 }
 
+@media only screen and (max-height: 450px) {
+  .detail_image {
+    float: left;
+    padding-left: 10px;
+  }
+
+  .details_info {
+    padding-right: 15px;
+  }
+
+  .item_details {
+    font-size: .60em
+  }
+}
 
 /**************************
 END SHOP DETAILS STYLE
@@ -418,6 +432,7 @@ START RETAILERS STYLE
   padding: 10px 0;
   margin: 5px 0;
   width: auto;
+  font-size: 1.25em;
 }
 
 .retailers_href:hover {
@@ -439,20 +454,9 @@ START RETAILERS STYLE
   }
 }
 
-@media only screen and (max-height: 450px) {
-  .detail_image {
-    float: left;
-    padding-left: 10px;
-  }
-
-  .details_info {
-    padding-right: 15px;
-  }
-}
-
 @media only screen and (max-width: 400px) {
   .stores_wrapper {
-    font-size: .85em}
+    font-size: .75em}
   }
 /**************************
 END RETAILERS STYLE
@@ -475,6 +479,7 @@ START CONTACT STYLE
 .contact_email {
   text-align: center;
   font-style: italic;
+  font-size: 1.25em;
 }
 
 .contact_email :hover {

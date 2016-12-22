@@ -24,12 +24,7 @@ function handleAndradePage() {
     $('#andrade_gallery').append(inst.toHtml());
   });
 
-  function handleCollections() {
-    $('.collections').on('click', function() {
-      $('.collections').css({'border-bottom':'none'});
-      $('.collections_ul').addClass('showing').slideToggle('slow');
-    });
-  }
+
 }
 
 $('#andrade_link').on('click', function() {

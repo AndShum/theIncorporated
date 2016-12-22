@@ -22,20 +22,8 @@ function handleRetailersPage() {
     $('#retailers_list').append(inst.toHtml());
   });
 
-  // function setDisplay() {
-  //   $('#retailers_link').on('click', function() {
-  //     $('#retailers_gallery').css({'display':'flex'});
-  //   });
-  // }
-  //
-  // setDisplay();
 
-  function handleCollections() {
-    $('.collections').on('click', function() {
-      $('.collections').css({'border-bottom':'none'});
-      $('.collections_ul').addClass('showing').slideToggle('slow');
-    });
-  }
+
   document.getElementById('retailers_link').removeEventListener('click', handleRetailersPage, false);
 
 }
