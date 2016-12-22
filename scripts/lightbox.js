@@ -19,7 +19,6 @@ function handleLightBox() {
   	 $overlay.fadeIn('fast');
 
 
-
   });
 
 
