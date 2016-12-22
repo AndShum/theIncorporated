@@ -36,8 +36,10 @@ function handleGodoyPage() {
 $('#godoy_link').on('click', function() {
   if(width < 736){
     $('#godoy_gallery').fadeToggle().css({'display':'block'});
+    console.log(this);
   } else {
     $('#godoy_gallery').fadeToggle().css({'display':'inline-flex','justify-content':'flex-start','position':'static'});
+    console.log(this);
   }
 });
 
