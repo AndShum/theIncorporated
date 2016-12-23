@@ -1,21 +1,21 @@
 var andradeLocalData = [
   {
     name: '',
-    main_img_src: 'img/andrade_img/1.jpg',
+    main_img_src: '/theIncorporated/img/andrade_img/1.jpg',
     lrg_img_src: '',
     img_alt: 'BODY RITUAL by ANDRADE',
     description: 'COLLECTION 1 EDITORIAL',
     featured_items: '',
   },
   {
-    main_img_src: 'img/andrade_img/2.jpg',
+    main_img_src: '/theIncorporated/img/andrade_img/2.jpg',
     lrg_img_src: '',
     img_alt: 'BODY RITUAL by ANDRADE',
     description: 'COLLECTION 1 EDITORIAL',
     featured_items: '',
   },
   {
-    main_img_src: 'img/andrade_img/3.jpg',
+    main_img_src: '/theIncorporated/img/andrade_img/3.jpg',
     lrg_img_src: '',
     img_alt: 'BODY RITUAL by ANDRADE',
     description: 'COLLECTION 1 EDITORIAL',
