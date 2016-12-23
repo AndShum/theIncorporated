@@ -12,18 +12,12 @@ function handleLightBox() {
 
   $('.gallery img').click(function(event) {
   	 event.preventDefault();
-    console.log(this);
   	 var imageLocation = $(this).attr('src');
-    console.log(this);
   	 $image.attr('src', imageLocation);
-
 
   	 $overlay.css({'display':'flex', 'justify-content':'center', 'align-items':'center'}).fadeIn('fast');
 
-    console.log(this);
-
   });
-
 
   $overlay.click(function(){
     $overlay.fadeOut('fast');
