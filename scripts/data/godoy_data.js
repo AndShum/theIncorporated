@@ -58,13 +58,6 @@ var godoyLocalData = [
     featured_items: '',
   },
   {
-    main_img_src: '/theIncorporated/img/godoy_img/8.jpg',
-    lrg_img_src: '',
-    img_alt: 'DONT STOP THE CARNIVAL by GODOY',
-    description: 'COLLECTION 2 LOOKBOOK',
-    featured_items: '',
-  },
-  {
     main_img_src: '/theIncorporated/img/godoy_img/9.jpg',
     lrg_img_src: '',
     img_alt: 'DONT STOP THE CARNIVAL by GODOY',
@@ -227,14 +220,6 @@ var godoyLocalData = [
   },
   {
     main_img_src: '/theIncorporated/img/godoy_img/32.jpg',
-    lrg_img_src: '',
-    img_alt: 'DONT STOP THE CARNIVAL by GODOY',
-    description: 'COLLECTION 2 LOOKBOOK',
-    featured_items: '',
-  },
-  {
-    name: '',
-    main_img_src: '/theIncorporated/img/godoy_img/33.jpg',
     lrg_img_src: '',
     img_alt: 'DONT STOP THE CARNIVAL by GODOY',
     description: 'COLLECTION 2 LOOKBOOK',

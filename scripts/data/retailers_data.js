@@ -41,4 +41,37 @@ var retailersLocalData = [
     address_href: 'https://www.google.com/maps/place/Lessons/@-31.950633,115.8537913,17z/data=!3m1!4b1!4m5!3m4!1s0x2a32a16fc230c8d3:0xd78f5a3951cae96f!8m2!3d-31.950633!4d115.85598',
     href: 'http://www.lessonsconceptstore.com/',
   },
+  {
+    name: 'The Factory',
+    address: '#103, 1100 N Broadway Ave, Oklahoma City, OK 73103',
+    address_href: 'https://www.google.com/maps/place/The+Factory/@35.4783246,-97.5158941,17z/data=!4m13!1m7!3m6!1s0x87b2173a0b073965:0xd68a31db04a82ddb!2sPontiac+Building,+1100+N+Broadway+Ave+%23103,+Oklahoma+City,+OK+73103!3b1!8m2!3d35.4783246!4d-97.5137054!3m4!1s0x87b2173a0b0e559d:0xb6fffb9616376c2c!8m2!3d35.478348!4d-97.513793',
+    href: 'https://www.thefactoryokc.com/',
+  },
+  {
+    name: 'Feature',
+    address: '3735 W Spring Mountain Rd #205, Las Vegas, NV 89102',
+    address_href: 'https://www.google.com/maps/place/Feature/@36.1264874,-115.1908078,17.3z/data=!4m13!1m7!3m6!1s0x80c8c6a77d2ef477:0xb5cd6f2d573a30e1!2s3735+W+Spring+Mountain+Rd+%23205,+Las+Vegas,+NV+89102!3b1!8m2!3d36.1264823!4d-115.1891238!3m4!1s0x0:0xd9db02d9e1422642!8m2!3d36.1261279!4d-115.1891492',
+    href: 'https://www.featuresneakerboutique.com/',
+  },
+
+  {
+    name: 'Stone Soup',
+    address: 'Char. Trikoupi 18, Athina 106 79, Greece',
+    address_href: 'https://www.google.com/maps/place/Stone+Soup/@37.9830286,23.7313837,17z/data=!4m13!1m7!3m6!1s0x14a1bd3752cf63b7:0x1308510c4174b24d!2sChar.+Trikoupi+18,+Athina+106+79,+Greece!3b1!8m2!3d37.9830244!4d23.7335777!3m4!1s0x14a1bd30ace7821b:0x2dafa6b6a0a34616!8m2!3d37.9829726!4d23.7334375',
+    href: '',
+  },
+
+  {
+    name: 'FLat Hat Club',
+    address: '288 East Exchange Street Akron, Ohio 44304',
+    address_href: 'https://www.google.com/maps/place/288+E+Exchange+St,+Akron,+OH+44304/@41.072809,-81.5149125,17z/data=!3m1!4b1!4m5!3m4!1s0x883129ded75f541f:0x7b3487e28bc245e8!8m2!3d41.072805!4d-81.5127185',
+    href: 'https://www.theflathatclub.com/',
+  },
+
+  {
+    name: 'Addicted',
+    address: '24 Seolleung-ro 155-gil, Gangnam-gu, Seoul',
+    address_href: 'https://www.google.com/maps/place/24+Seolleung-ro+155-gil,+Gangnam-gu,+Seoul,+South+Korea/@37.5256926,127.0376685,20.64z/data=!4m5!3m4!1s0x357ca3887b2336d1:0x826d7cd5d7079b0b!8m2!3d37.5256774!4d127.0378133',
+    href: 'http://www.addicted.kr/',
+  },
 ];

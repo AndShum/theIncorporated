@@ -1,4 +1,6 @@
 var mojicaImages = [];
+var width = $(window).width();
+
 
 function MojicaGallery(opts) {
   this.main_img_src = opts.main_img_src;
@@ -30,3 +32,23 @@ function handleCollections() {
 }
 
 handleCollections();
+// function handleCollectionsWeb() {
+//   $('.collections').hover(function() {
+//     $('.collections').css({'border-bottom':'none'});
+//     $('.collections_ul').addClass('showing').slideToggle('slow');
+//   });
+// }
+//
+// function handleCollectionsMobile() {
+//   $('.collections').on('click', function() {
+//     $('.collections').css({'border-bottom':'none'});
+//     $('.collections_ul').addClass('showing').slideToggle('slow');
+//   });
+// }
+//
+// if(width < 736){
+//
+//   handleCollectionsMobile();
+// }
+
+// handleCollectionsWeb();

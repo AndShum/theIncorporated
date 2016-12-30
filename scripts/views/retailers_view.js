@@ -71,6 +71,28 @@ var lessons = {
   latlong: {lat: -31.950630, lng: 115.856023},
 };
 
+var the_factory = {
+  content: '<img src="" style="width:40px; height:40px">',
+  latlong: {lat: 35.478364, lng: -97.513614},
+};
+
+var feature = {
+  content: '<img src="" style="width:40px; height:40px">',
+  latlong: {lat: 36.126128, lng: -115.188850},
+};
+var stone_soup = {
+  content: '<img src="" style="width:40px; height:40px">',
+  latlong: {lat: 37.983193, lng: 23.733610},
+};
+var flat_hat_club = {
+  content: '<img src="" style="width:40px; height:40px">',
+  latlong: {lat: 41.072991, lng: -81.512729},
+};
+var addicted = {
+  content: '<img src="" style="width:40px; height:40px">',
+  latlong: {lat: 37.525826, lng: 127.037819},
+};
+
 function initMap() {
   minZoomLevel = 2;
   var center = {lat: 24.533116, lng: -126.128945};
@@ -193,8 +215,30 @@ function initMap() {
     map: map
   });
 
+  var marker = new google.maps.Marker({
+    position: the_factory.latlong,
+    map: map
+  });
 
+  var marker = new google.maps.Marker({
+    position: feature.latlong,
+    map: map
+  });
 
+  var marker = new google.maps.Marker({
+    position: stone_soup.latlong,
+    map: map
+  });
+
+  var marker = new google.maps.Marker({
+    position: flat_hat_club.latlong,
+    map: map
+  });
+
+  var marker = new google.maps.Marker({
+    position: addicted.latlong,
+    map: map
+  });
 
 
   var infoWindow = new google.maps.InfoWindow({

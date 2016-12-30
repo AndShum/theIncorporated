@@ -47,6 +47,6 @@ function handleDetailsPage() {
 }
 document.getElementById('details_link').addEventListener('click', handleDetailsPage, false);
 
-$('.fa-plus-square-o').on('click', function() {
+$('#details_link').on('click', function() {
   $('#details_wrapper').css({'display':'flex', 'justify-content':'center', 'align-items':'center'});
 });

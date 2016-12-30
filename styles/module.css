@@ -346,6 +346,9 @@ END SHOP GALLERY STYLE
 START SHOP DETAILS STYLE
 **************************/
 
+#details_link {
+  cursor: pointer;
+}
 
 .details_view_info {
   display: none;
@@ -476,6 +479,10 @@ START CONTACT STYLE
   font-size: 1.25em;
 }
 
+.contact_sub_title {
+  text-align: center;
+  text-decoration: underline;
+}
 .contact_email {
   text-align: center;
   font-style: italic;
