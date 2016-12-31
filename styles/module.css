@@ -259,12 +259,27 @@ START SHOP GALLERY STYLE
   text-align: center;
 }
 
+.shop_li {
+  display: flex;
+  justify-content: center;
+}
+
 #shop_gallery {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.status {
+  width: 125px;
+  text-align: center;
+  position: absolute;;
+  margin-top: 50px;
+  color: red;
+  background: rgba(24,24,24,0.95);
+  cursor: pointer;
 }
 
 .shop_item_wrapper {
@@ -337,6 +352,16 @@ START SHOP GALLERY STYLE
     max-width: 1000px;
   }
 
+  .status {
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    font-size: 3em;
+    margin-top: 123px;
+    color: red;
+    background: rgba(24,24,24,0.95);
+    cursor: pointer;
+  }
 }
 /**************************
 END SHOP GALLERY STYLE
@@ -379,7 +404,8 @@ START SHOP DETAILS STYLE
   padding: 10px;
 }
 .detail_image{
-  width: 275px;
+  cursor: pointer;
+  width: 375px;
   margin: 0 auto;
   display: block;
 }
@@ -391,11 +417,42 @@ START SHOP DETAILS STYLE
   margin: 0 auto;
 }
 
+.img_swap_container {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#img_swap_front {
+  display: inline;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#img_swap_front:hover {
+  color: lightgrey;
+}
+
+#img_swap_back {
+  display: inline;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#img_swap_back:hover {
+  color: lightgrey;
+}
 
 .item_details {
   font-size: .80em;
 }
 
+.back {
+  display: none;
+}
 @media only screen and (max-height: 450px) {
   .detail_image {
     float: left;

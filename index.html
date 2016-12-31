@@ -51,6 +51,7 @@
           <!-- <p class="featured_items">{{main_img_src}}</p> -->
 
           <a href={{main_img_src}}><img src="{{main_img_src}}" alt="img_alt" class="main_img_display"></a>
+
           <!-- description has been set to display: none for mobile view -->
 
           <!-- <p class=mojica_description>{{description}}</p> -->
@@ -60,21 +61,29 @@
 
     <script id="shop_template" type="text/x-handlebars-template">
       <div class="shop_item_wrapper">
-        <section class="open_description">{{{open_description}}}</section>
+        <section class="open_description">
           <p class="shop_li">
+            <p class="status">{{status}}</p>
             <img src="{{front_img_src}}" id="details_link" alt="img_alt" class="shop_gallery_img">
           </p>
-
+        </section>
 
         <div id="details_wrapper">
           <div class="details_view_info">
             <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+              <section class="close_description">
 
-              <section class="close_description">{{{close_description}}}</section>
+                <img src="{{front_img_src}}" class="detail_image front" alt="{{img_alt}}">
+                <img src="{{back_img_src}}" class="detail_image back" alt="{{img_alt}}">
 
-              <img src="{{front_img_src}}" class="detail_image" alt="{{img_alt}}">
+              </section>
+              <section class="img_swap_container">
+                <section id="img_swap_front">Front</section>
+                <section id="img_swap_back">Back</section>
+              </section>
 
-            <h2 class="item_name">{{name}}</h2>
+
+              <h2 class="item_name">{{name}}</h2>
 
             <section class="details_info">
 
@@ -88,6 +97,7 @@
 
               <div class="purchase_info">
                 <h2 class="item_price">{{price}}</h2>
+                {{sold_out}}
                 {{{shop_link}}}
               </div>
             </section>
@@ -188,20 +198,13 @@
       <h2 class="shop_h2">COLLECTION NOW AVAILABLE</h2>
     </section>
     <section id="shop_gallery">
+
       <!-- SHOP IMAGES WILL POPULATE HERE -->
     </section>
   </div>
 
   <!-- END SHOP GALLERY-->
 
-  <!-- BEGIN SHOP DETAILS -->
-
-  <div id="shop_details">
-    <!-- SHOP DETAILS WILL POPULATE HERE -->
-
-  </div>
-
-  <!-- END SHOP DETAILS -->
 
   <!-- BEGIN RETAILERS -->
   <div id="retailers">
@@ -266,7 +269,7 @@
     <!-- <script src="scripts/views/godoy_view.js"></script> -->
     <script src="scripts/views/shop_view.js"></script>
     <script src="scripts/views/retailers_view.js"></script>
-    <!-- <script src="scripts/views/details_view.js"></script> -->
+    <script src="scripts/views/details_view.js"></script>
 
     <!-- CONTROLLER SCRIPTS -->
     <script src="scripts/controller/shopController.js"></script>

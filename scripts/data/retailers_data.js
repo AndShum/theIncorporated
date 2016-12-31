@@ -58,7 +58,7 @@ var retailersLocalData = [
     name: 'Stone Soup',
     address: 'Char. Trikoupi 18, Athina 106 79, Greece',
     address_href: 'https://www.google.com/maps/place/Stone+Soup/@37.9830286,23.7313837,17z/data=!4m13!1m7!3m6!1s0x14a1bd3752cf63b7:0x1308510c4174b24d!2sChar.+Trikoupi+18,+Athina+106+79,+Greece!3b1!8m2!3d37.9830244!4d23.7335777!3m4!1s0x14a1bd30ace7821b:0x2dafa6b6a0a34616!8m2!3d37.9829726!4d23.7334375',
-    href: '',
+    href: 'http://www.stonesoup.io/',
   },
 
   {

@@ -9,6 +9,8 @@ function handleShopPage() {
     this.close_description = opts.close_description;
     this.front_img_src = opts.front_img_src;
     this.back_img_src = opts.back_img_src;
+    this.status = opts.status;
+    this.sold_out = opts.sold_out;
     this.price = opts.price;
     this.shop_link = opts.shop_link;
     this.detail_1 = opts.detail_1;
@@ -47,7 +49,7 @@ document.getElementById('shop_link').addEventListener('click', handleShopPage, f
 
 shopImages.handleItemDetails = function(event) {
   $('#shop_gallery').on('click', '.open_description', function() {
-    console.log(this);
+    console.log('open description');
     $(this).siblings('#details_wrapper').children().fadeToggle('fast');
     $(this).siblings('#details_wrapper').css({'display':'flex', 'justify-content':'center', 'align-items':'center'});
   });
@@ -55,10 +57,25 @@ shopImages.handleItemDetails = function(event) {
 
 
 $('#shop_gallery').on('click', '.close_description', function() {
-  console.log('second closing');
+  console.log('close description');
   $(this).parent().fadeToggle();
 });
 
+$('#shop_gallery').on('click', '#img_swap_front', function() {
+  console.log('toggle front');
+  $(this).parent().siblings('.close_description').children('.detail_image_front').show('fast');
+  console.log(this);
+  $(this).parent().siblings('.close_description').children('.detial_image_back').hide('fast');
+  console.log(this);
+});
+
+$('#shop_gallery').on('click', '#img_swap_back', function() {
+  console.log('toggle front');
+  $(this).parent().siblings('.close_description').children('.detial_image_back').show('fast');
+  console.log(this);
+  $(this).parent().siblings('.close_description').children('.detail_image_front').hide('fast');
+  console.log(this);
+});
 
 
 handleShopPage();

@@ -89,7 +89,7 @@ var flat_hat_club = {
   latlong: {lat: 41.072991, lng: -81.512729},
 };
 var addicted = {
-  content: '<img src="" style="width:40px; height:40px">',
+  content: '<p class="content">Addicted</p><p class="content">Seoul, South Korea</p>',
   latlong: {lat: 37.525826, lng: 127.037819},
 };
 
@@ -235,17 +235,18 @@ function initMap() {
     map: map
   });
 
-  var marker = new google.maps.Marker({
+  var addictedMarker = new google.maps.Marker({
     position: addicted.latlong,
     map: map
   });
 
 
   var infoWindow = new google.maps.InfoWindow({
-    content: gr8.content
+    content: addicted.content,
   });
-  marker.addListener('click', function() {
-    infoWindow.open(map, marker);
+
+  addictedMarker.addListener('click', function() {
+    infoWindow.open(map, addictedMarker);
   });
 }
 
