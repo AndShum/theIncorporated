@@ -94,8 +94,6 @@ a {
 }
 
 .collection1_ul {
-  /*padding: 20px 0 0 0;
-  position: absolute;*/
   text-align: justify;
   padding: 20px 0 0 0;
   color: white;
@@ -278,7 +276,6 @@ START SHOP GALLERY STYLE
   position: absolute;;
   margin-top: 50px;
   color: red;
-  background: rgba(24,24,24,0.95);
   cursor: pointer;
 }
 
@@ -359,7 +356,6 @@ START SHOP GALLERY STYLE
     font-size: 3em;
     margin-top: 123px;
     color: red;
-    background: rgba(24,24,24,0.95);
     cursor: pointer;
   }
 }
@@ -483,7 +479,7 @@ START RETAILERS STYLE
 
 .stores_wrapper {
   width: 90%;
-  max-width: 1200px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -507,7 +503,7 @@ START RETAILERS STYLE
   #map {
     display: block;
     width: 90%;
-    max-width: 1200px;
+    max-width: 950px;
     height: 500px;
     margin: 0 auto;
     border: 1px solid black;
