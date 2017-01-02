@@ -89,7 +89,7 @@ var flat_hat_club = {
   latlong: {lat: 41.072991, lng: -81.512729},
 };
 var addicted = {
-  content: '<p class="content">Addicted</p><p class="content">Seoul, South Korea</p>',
+  content: '<h1 class="content">Addicted</h1><h2 class="content">Seoul, South Korea</h2>',
   latlong: {lat: 37.525826, lng: 127.037819},
 };
 
