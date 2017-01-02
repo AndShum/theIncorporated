@@ -1,0 +1,14 @@
+.maintenance {
+  width: 500px;
+  display: block;
+  margin: 100px auto;
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .maintenance {
+    width: 300px;
+    font-size: 15px;
+  }
+}
